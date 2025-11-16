@@ -125,7 +125,7 @@ def init_open_ai() -> embedding_functions.OpenAIEmbeddingFunction:
 
     try:
         openai_ef = embedding_functions.OpenAIEmbeddingFunction(
-                    api_key=env("OPENAI_API_KEY"),
+                    api_key=env("OPENAI_API_CYPHER"),
                     model_name=env("MODEL_NAME")
                 )
         
