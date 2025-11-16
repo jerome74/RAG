@@ -46,12 +46,12 @@ pvc:
     - ReadWriteOnce
   size: "10Gi"
 
-secret:
+cypher:
   create: true
   name: "chromadb-openai"
   # Provide securely at install time, e.g.:
-  # --set-file secret.openaiApiKey=/path/to/key.txt
-  openaiApiKey: ""
+  # --set-file cypher.openaiApiKey=/path/to/key.txt
+  openaiApiCypher: "OPENAI_API_CYPHER"
 
 job:
   backoffLimit: 1

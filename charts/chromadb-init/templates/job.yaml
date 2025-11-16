@@ -60,14 +60,10 @@ spec:
               value: {{ .Values.chromadb.modelName | quote }}
             - name: BATCH_SIZE
               value: {{ .Values.chromadb.batchSize | quote }}
-            - name: CSV_URL
-              value: {{ .Values.csv.url | quote }}
             - name: CSV_PATH
               value: {{ .Values.csv.path | quote }}
             - name: CSV_ENCODING
               value: {{ .Values.csv.encoding | quote }}
-            - name: CSV_DELIMITER
-              value: {{ .Values.csv.delimiter | quote }}
             - name: FAIL_ON_MISSING_COLUMNS
               value: {{ ternary "true" "false" .Values.csv.failOnMissingColumns | quote }}
           volumeMounts:
