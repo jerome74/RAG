@@ -23,4 +23,4 @@ RUN useradd -m appuser
 USER appuser
 
 # Run the ingestion script
-ENTRYPOINT ["python", "-u", "main.py"]
+ENTRYPOINT ["python3", "-u", "main.py"]
