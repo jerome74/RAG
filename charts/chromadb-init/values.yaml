@@ -51,7 +51,7 @@ secret:
   name: "chromadb-openai"
   # Provide securely at install time, e.g.:
   # --set-file secret.openaiApiKey=/path/to/key.txt
-  openaiApiKey: "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"
+  openaiApiKey: ""
 
 job:
   backoffLimit: 1
