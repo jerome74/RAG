@@ -50,7 +50,7 @@ spec:
             - name: OPENAI_API_KEY
               valueFrom:
                 secretKeyRef:
-                  name: {{ default (printf "%s-openai" .Release.Name) .Values.secret.name }}
+                  name: {{ default (printf "%s-openai" .Release.Name) .Values.cypher.name }}
                   key: OPENAI_API_KEY
             - name: COLLECTION_NAME
               value: {{ .Values.chromadb.collectionName | quote }}
