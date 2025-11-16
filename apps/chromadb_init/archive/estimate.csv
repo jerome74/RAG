@@ -1,0 +1,684 @@
+id,title,document,source,category,metadata_json
+5a1600c5-1ca0-4c21-a24f-60b8d0fb1fb9,Grid Visualization,"Sheet: Requirements
+Requirement: Grid Visualization
+Description: Module that allows you to view an orthogonal representation of the network and graphically identify elements that meet a series of conditions (DER, Critical Issues, etc.). Usability, tool awareness
+Value/Goal: Usability, tool awareness",Audit_Alarms_KnowledgeBase_merged.csv,Requirements,"{""source_file"": ""Audit_Alarms_KnowledgeBase_merged.csv"", ""sheet"": ""Requirements"", ""requirements"": ""Grid Visualization"", ""value"": ""Usability, tool awareness"", ""team"": ""none"", ""macro_activity"": ""none"", ""activity"": ""none"", ""profile"": ""none"", ""rate_per_day"": ""none"", ""estimation_days"": NaN}"
+ffd11ba1-0b5f-49e1-9397-7e70834d01f7,Modulo di audit,"Sheet: Requirements
+Requirement: Modulo di audit
+Description: Module that allows you to log all actions performed by users and services of the DERMS application. Process monitoring and tracking of any conflicts of interest (legal).
+Value/Goal: Process monitoring and tracking of potential conflicts of interest (legal)",Audit_Alarms_KnowledgeBase_merged.csv,Requirements,"{""source_file"": ""Audit_Alarms_KnowledgeBase_merged.csv"", ""sheet"": ""Requirements"", ""requirements"": ""Modulo di audit"", ""value"": ""Process monitoring and tracking of potential conflicts of interest (legal)"", ""team"": ""none"", ""macro_activity"": ""none"", ""activity"": ""none"", ""profile"": ""none"", ""rate_per_day"": ""none"", ""estimation_days"": NaN}"
+3b49db62-441e-4573-af6a-f4690f694b98,Audit Modul,"Sheet: Requirements
+Requirement: Audit Modul
+Description: Module for designing and managing alarms and notifications in DERMS (critical issues, new contracts, network load, etc.). Operator-configurable alerts, usability.
+Value/Goal: Operator-configurable alerts, usability",Audit_Alarms_KnowledgeBase_merged.csv,Requirements,"{""source_file"": ""Audit_Alarms_KnowledgeBase_merged.csv"", ""sheet"": ""Requirements"", ""requirements"": ""Audit Modul"", ""value"": ""Operator-configurable alerts, usability"", ""team"": ""none"", ""macro_activity"": ""none"", ""activity"": ""none"", ""profile"": ""none"", ""rate_per_day"": ""none"", ""estimation_days"": NaN}"
+54dd5e0e-ba7a-4c28-aa15-25848ec40b0a,C.Calculation Team - Grid Visualization DERMS/ TL (Metamos paginacion y algunos filtros tambien) - DERMS Grid Visualization,"Sheet: Stimation
+Requirement: Grid Visualization
+Team: C.Calculation Team
+MacroActivity: Grid Visualization DERMS/ TL (Metamos paginacion y algunos filtros tambien)
+Activity: DERMS Grid Visualization
+Estimation (days): 2.0",Audit_Alarms_KnowledgeBase_merged.csv,Stimation,"{""source_file"": ""Audit_Alarms_KnowledgeBase_merged.csv"", ""sheet"": ""Stimation"", ""requirements"": ""Grid Visualization"", ""value"": ""none"", ""team"": ""C.Calculation Team"", ""macro_activity"": ""Grid Visualization DERMS/ TL (Metamos paginacion y algunos filtros tambien)"", ""activity"": ""DERMS Grid Visualization"", ""profile"": ""none"", ""rate_per_day"": ""none"", ""estimation_days"": 2.0}"
+2c77747f-8980-483b-99e1-e6b4a04ce854,D.Front Team - Grid Visualization DERMS/ TL - DERMS Grid Visualization,"Sheet: Stimation
+Requirement: Grid Visualization
+Team: D.Front Team
+MacroActivity: Grid Visualization DERMS/ TL
+Activity: DERMS Grid Visualization
+Estimation (days): 2.0",Audit_Alarms_KnowledgeBase_merged.csv,Stimation,"{""source_file"": ""Audit_Alarms_KnowledgeBase_merged.csv"", ""sheet"": ""Stimation"", ""requirements"": ""Grid Visualization"", ""value"": ""none"", ""team"": ""D.Front Team"", ""macro_activity"": ""Grid Visualization DERMS/ TL"", ""activity"": ""DERMS Grid Visualization"", ""profile"": ""none"", ""rate_per_day"": ""none"", ""estimation_days"": 2.0}"
+b59f0087-f34b-4a2a-8518-6a1d96f312aa,C.Calculation Team - Grid Visualization DERMS/ TL (Metamos paginacion y algunos filtros tambien) - TL Grid Visualization,"Sheet: Stimation
+Requirement: Grid Visualization
+Team: C.Calculation Team
+MacroActivity: Grid Visualization DERMS/ TL (Metamos paginacion y algunos filtros tambien)
+Activity: TL Grid Visualization
+Estimation (days): 2.0",Audit_Alarms_KnowledgeBase_merged.csv,Stimation,"{""source_file"": ""Audit_Alarms_KnowledgeBase_merged.csv"", ""sheet"": ""Stimation"", ""requirements"": ""Grid Visualization"", ""value"": ""none"", ""team"": ""C.Calculation Team"", ""macro_activity"": ""Grid Visualization DERMS/ TL (Metamos paginacion y algunos filtros tambien)"", ""activity"": ""TL Grid Visualization"", ""profile"": ""none"", ""rate_per_day"": ""none"", ""estimation_days"": 2.0}"
+765a83d4-b0f5-45c9-8449-850597dd8db8,D.Front Team - Grid Visualization DERMS/ TL - TL Grid Visualization,"Sheet: Stimation
+Requirement: Grid Visualization
+Team: D.Front Team
+MacroActivity: Grid Visualization DERMS/ TL
+Activity: TL Grid Visualization
+Estimation (days): 1.0",Audit_Alarms_KnowledgeBase_merged.csv,Stimation,"{""source_file"": ""Audit_Alarms_KnowledgeBase_merged.csv"", ""sheet"": ""Stimation"", ""requirements"": ""Grid Visualization"", ""value"": ""none"", ""team"": ""D.Front Team"", ""macro_activity"": ""Grid Visualization DERMS/ TL"", ""activity"": ""TL Grid Visualization"", ""profile"": ""none"", ""rate_per_day"": ""none"", ""estimation_days"": 1.0}"
+ea0655e7-1802-4d22-adf9-068121830fb5,D.Front Team - Color Criticalities - Color Criticalities,"Sheet: Stimation
+Requirement: Grid Visualization
+Team: D.Front Team
+MacroActivity: Color Criticalities
+Activity: Color Criticalities
+Estimation (days): 1.0",Audit_Alarms_KnowledgeBase_merged.csv,Stimation,"{""source_file"": ""Audit_Alarms_KnowledgeBase_merged.csv"", ""sheet"": ""Stimation"", ""requirements"": ""Grid Visualization"", ""value"": ""none"", ""team"": ""D.Front Team"", ""macro_activity"": ""Color Criticalities"", ""activity"": ""Color Criticalities"", ""profile"": ""none"", ""rate_per_day"": ""none"", ""estimation_days"": 1.0}"
+b0a4a276-85fa-42e8-b9be-44f5927366f5,D.Front Team - Operation navegation buttons - Operation navegation buttons (Operation - Ortogonal),"Sheet: Stimation
+Requirement: Grid Visualization
+Team: D.Front Team
+MacroActivity: Operation navegation buttons
+Activity: Operation navegation buttons (Operation - Ortogonal)
+Estimation (days): 1.0",Audit_Alarms_KnowledgeBase_merged.csv,Stimation,"{""source_file"": ""Audit_Alarms_KnowledgeBase_merged.csv"", ""sheet"": ""Stimation"", ""requirements"": ""Grid Visualization"", ""value"": ""none"", ""team"": ""D.Front Team"", ""macro_activity"": ""Operation navegation buttons"", ""activity"": ""Operation navegation buttons (Operation - Ortogonal)"", ""profile"": ""none"", ""rate_per_day"": ""none"", ""estimation_days"": 1.0}"
+83cc4502-f479-473d-b284-6744647de01e,C.Calculation Team - Display Line information - Recover Line information (name etc),"Sheet: Stimation
+Requirement: Grid Visualization
+Team: C.Calculation Team
+MacroActivity: Display Line information
+Activity: Recover Line information (name etc)
+Estimation (days): 0.5",Audit_Alarms_KnowledgeBase_merged.csv,Stimation,"{""source_file"": ""Audit_Alarms_KnowledgeBase_merged.csv"", ""sheet"": ""Stimation"", ""requirements"": ""Grid Visualization"", ""value"": ""none"", ""team"": ""C.Calculation Team"", ""macro_activity"": ""Display Line information"", ""activity"": ""Recover Line information (name etc)"", ""profile"": ""none"", ""rate_per_day"": ""none"", ""estimation_days"": 0.5}"
+9786abc0-e3d0-4dca-930f-877855542c32,A.Platform Team - Display Line information - Export Line Information,"Sheet: Stimation
+Requirement: Grid Visualization
+Team: A.Platform Team
+MacroActivity: Display Line information
+Activity: Export Line Information
+Estimation (days): 2.0",Audit_Alarms_KnowledgeBase_merged.csv,Stimation,"{""source_file"": ""Audit_Alarms_KnowledgeBase_merged.csv"", ""sheet"": ""Stimation"", ""requirements"": ""Grid Visualization"", ""value"": ""none"", ""team"": ""A.Platform Team"", ""macro_activity"": ""Display Line information"", ""activity"": ""Export Line Information"", ""profile"": ""none"", ""rate_per_day"": ""none"", ""estimation_days"": 2.0}"
+5fb87e1d-d3c2-4b9e-9fb4-f307db599b3a,D.Front Team - Display Line information - Show Line information,"Sheet: Stimation
+Requirement: Grid Visualization
+Team: D.Front Team
+MacroActivity: Display Line information
+Activity: Show Line information
+Estimation (days): 0.5",Audit_Alarms_KnowledgeBase_merged.csv,Stimation,"{""source_file"": ""Audit_Alarms_KnowledgeBase_merged.csv"", ""sheet"": ""Stimation"", ""requirements"": ""Grid Visualization"", ""value"": ""none"", ""team"": ""D.Front Team"", ""macro_activity"": ""Display Line information"", ""activity"": ""Show Line information"", ""profile"": ""none"", ""rate_per_day"": ""none"", ""estimation_days"": 0.5}"
+626cd2a2-56a6-4319-bfe6-aac38bbd87f2,D.Front Team - Adapt Icons to enel display - Change layout,"Sheet: Stimation
+Requirement: Grid Visualization
+Team: D.Front Team
+MacroActivity: Adapt Icons to enel display
+Activity: Change layout
+Estimation (days): 0.5",Audit_Alarms_KnowledgeBase_merged.csv,Stimation,"{""source_file"": ""Audit_Alarms_KnowledgeBase_merged.csv"", ""sheet"": ""Stimation"", ""requirements"": ""Grid Visualization"", ""value"": ""none"", ""team"": ""D.Front Team"", ""macro_activity"": ""Adapt Icons to enel display"", ""activity"": ""Change layout"", ""profile"": ""none"", ""rate_per_day"": ""none"", ""estimation_days"": 0.5}"
+ba0d69d0-3fbc-4558-bd01-e44d78253420,D.Front Team - Adapt Icons to enel display - Adapt Legend,"Sheet: Stimation
+Requirement: Grid Visualization
+Team: D.Front Team
+MacroActivity: Adapt Icons to enel display
+Activity: Adapt Legend
+Estimation (days): 0.5",Audit_Alarms_KnowledgeBase_merged.csv,Stimation,"{""source_file"": ""Audit_Alarms_KnowledgeBase_merged.csv"", ""sheet"": ""Stimation"", ""requirements"": ""Grid Visualization"", ""value"": ""none"", ""team"": ""D.Front Team"", ""macro_activity"": ""Adapt Icons to enel display"", ""activity"": ""Adapt Legend"", ""profile"": ""none"", ""rate_per_day"": ""none"", ""estimation_days"": 0.5}"
+a31f4759-cf45-45e6-b5c1-30f8e4ab9ba6,D.Front Team - Show grid finish segments - Color segment finish,"Sheet: Stimation
+Requirement: Grid Visualization
+Team: D.Front Team
+MacroActivity: Show grid finish segments
+Activity: Color segment finish
+Estimation (days): 0.5",Audit_Alarms_KnowledgeBase_merged.csv,Stimation,"{""source_file"": ""Audit_Alarms_KnowledgeBase_merged.csv"", ""sheet"": ""Stimation"", ""requirements"": ""Grid Visualization"", ""value"": ""none"", ""team"": ""D.Front Team"", ""macro_activity"": ""Show grid finish segments"", ""activity"": ""Color segment finish"", ""profile"": ""none"", ""rate_per_day"": ""none"", ""estimation_days"": 0.5}"
+1f4938b5-3d38-4378-b42b-1b0f95b463d0,C.Calculation Team - Show Criticalities on the grid - Export information to FE,"Sheet: Stimation
+Requirement: Grid Visualization
+Team: C.Calculation Team
+MacroActivity: Show Criticalities on the grid
+Activity: Export information to FE
+Estimation (days): 1.0",Audit_Alarms_KnowledgeBase_merged.csv,Stimation,"{""source_file"": ""Audit_Alarms_KnowledgeBase_merged.csv"", ""sheet"": ""Stimation"", ""requirements"": ""Grid Visualization"", ""value"": ""none"", ""team"": ""C.Calculation Team"", ""macro_activity"": ""Show Criticalities on the grid"", ""activity"": ""Export information to FE"", ""profile"": ""none"", ""rate_per_day"": ""none"", ""estimation_days"": 1.0}"
+487067c8-b245-4304-a236-46b05fc1f2cd,D.Front Team - Show Criticalities on the grid - Display Criticalities information on the grid,"Sheet: Stimation
+Requirement: Grid Visualization
+Team: D.Front Team
+MacroActivity: Show Criticalities on the grid
+Activity: Display Criticalities information on the grid
+Estimation (days): 1.0",Audit_Alarms_KnowledgeBase_merged.csv,Stimation,"{""source_file"": ""Audit_Alarms_KnowledgeBase_merged.csv"", ""sheet"": ""Stimation"", ""requirements"": ""Grid Visualization"", ""value"": ""none"", ""team"": ""D.Front Team"", ""macro_activity"": ""Show Criticalities on the grid"", ""activity"": ""Display Criticalities information on the grid"", ""profile"": ""none"", ""rate_per_day"": ""none"", ""estimation_days"": 1.0}"
+e79dfa66-b272-48c5-b288-1a171757dbda,C.Calculation Team - Show Activation on the grid - Export information to FE,"Sheet: Stimation
+Requirement: Grid Visualization
+Team: C.Calculation Team
+MacroActivity: Show Activation on the grid
+Activity: Export information to FE
+Estimation (days): 1.0",Audit_Alarms_KnowledgeBase_merged.csv,Stimation,"{""source_file"": ""Audit_Alarms_KnowledgeBase_merged.csv"", ""sheet"": ""Stimation"", ""requirements"": ""Grid Visualization"", ""value"": ""none"", ""team"": ""C.Calculation Team"", ""macro_activity"": ""Show Activation on the grid"", ""activity"": ""Export information to FE"", ""profile"": ""none"", ""rate_per_day"": ""none"", ""estimation_days"": 1.0}"
+e437dbab-5e58-4995-b187-dab206b8ac3b,D.Front Team - Show Activation on the grid - Display Activation information on the grid,"Sheet: Stimation
+Requirement: Grid Visualization
+Team: D.Front Team
+MacroActivity: Show Activation on the grid
+Activity: Display Activation information on the grid
+Estimation (days): 2.0",Audit_Alarms_KnowledgeBase_merged.csv,Stimation,"{""source_file"": ""Audit_Alarms_KnowledgeBase_merged.csv"", ""sheet"": ""Stimation"", ""requirements"": ""Grid Visualization"", ""value"": ""none"", ""team"": ""D.Front Team"", ""macro_activity"": ""Show Activation on the grid"", ""activity"": ""Display Activation information on the grid"", ""profile"": ""none"", ""rate_per_day"": ""none"", ""estimation_days"": 2.0}"
+d477fba7-d3ac-416c-b461-2cf39d026333,C.Calculation Team - Show Available resources on the Grid (A nivel de operación y general) - Retrieve  Available resources and expose it to front end,"Sheet: Stimation
+Requirement: Grid Visualization
+Team: C.Calculation Team
+MacroActivity: Show Available resources on the Grid (A nivel de operación y general)
+Activity: Retrieve  Available resources and expose it to front end
+Estimation (days): 3.0",Audit_Alarms_KnowledgeBase_merged.csv,Stimation,"{""source_file"": ""Audit_Alarms_KnowledgeBase_merged.csv"", ""sheet"": ""Stimation"", ""requirements"": ""Grid Visualization"", ""value"": ""none"", ""team"": ""C.Calculation Team"", ""macro_activity"": ""Show Available resources on the Grid (A nivel de operación y general)"", ""activity"": ""Retrieve  Available resources and expose it to front end"", ""profile"": ""none"", ""rate_per_day"": ""none"", ""estimation_days"": 3.0}"
+828538fa-91c8-4533-97d6-6f1ce9a4bbba,D.Front Team - Show Available resources on the Grid (A nivel de operación y general) - Display Avalilable resources information,"Sheet: Stimation
+Requirement: Grid Visualization
+Team: D.Front Team
+MacroActivity: Show Available resources on the Grid (A nivel de operación y general)
+Activity: Display Avalilable resources information
+Estimation (days): 1.0",Audit_Alarms_KnowledgeBase_merged.csv,Stimation,"{""source_file"": ""Audit_Alarms_KnowledgeBase_merged.csv"", ""sheet"": ""Stimation"", ""requirements"": ""Grid Visualization"", ""value"": ""none"", ""team"": ""D.Front Team"", ""macro_activity"": ""Show Available resources on the Grid (A nivel de operación y general)"", ""activity"": ""Display Avalilable resources information"", ""profile"": ""none"", ""rate_per_day"": ""none"", ""estimation_days"": 1.0}"
+7aeb2a66-8a35-4c37-957e-c4e21cd6356e,B.Flexibility Team - Show Available resources on the Grid (A nivel de operación y general) - Export Available resources information,"Sheet: Stimation
+Requirement: Grid Visualization
+Team: B.Flexibility Team
+MacroActivity: Show Available resources on the Grid (A nivel de operación y general)
+Activity: Export Available resources information
+Estimation (days): 2.0",Audit_Alarms_KnowledgeBase_merged.csv,Stimation,"{""source_file"": ""Audit_Alarms_KnowledgeBase_merged.csv"", ""sheet"": ""Stimation"", ""requirements"": ""Grid Visualization"", ""value"": ""none"", ""team"": ""B.Flexibility Team"", ""macro_activity"": ""Show Available resources on the Grid (A nivel de operación y general)"", ""activity"": ""Export Available resources information"", ""profile"": ""none"", ""rate_per_day"": ""none"", ""estimation_days"": 2.0}"
+30398fdc-c344-48bf-9041-49d299441430,C.Calculation Team - New page with the visualizable elements - Visualization in Page,"Sheet: Stimation
+Requirement: Grid Visualization
+Team: C.Calculation Team
+MacroActivity: New page with the visualizable elements
+Activity: Visualization in Page
+Estimation (days): 0.0",Audit_Alarms_KnowledgeBase_merged.csv,Stimation,"{""source_file"": ""Audit_Alarms_KnowledgeBase_merged.csv"", ""sheet"": ""Stimation"", ""requirements"": ""Grid Visualization"", ""value"": ""none"", ""team"": ""C.Calculation Team"", ""macro_activity"": ""New page with the visualizable elements"", ""activity"": ""Visualization in Page"", ""profile"": ""none"", ""rate_per_day"": ""none"", ""estimation_days"": 0.0}"
+bd898165-d6f9-4350-aa70-fd922aef2813,C.Calculation Team - New page with the visualizable elements - Filters,"Sheet: Stimation
+Requirement: Grid Visualization
+Team: C.Calculation Team
+MacroActivity: New page with the visualizable elements
+Activity: Filters
+Estimation (days): 1.0",Audit_Alarms_KnowledgeBase_merged.csv,Stimation,"{""source_file"": ""Audit_Alarms_KnowledgeBase_merged.csv"", ""sheet"": ""Stimation"", ""requirements"": ""Grid Visualization"", ""value"": ""none"", ""team"": ""C.Calculation Team"", ""macro_activity"": ""New page with the visualizable elements"", ""activity"": ""Filters"", ""profile"": ""none"", ""rate_per_day"": ""none"", ""estimation_days"": 1.0}"
+c054503f-0d9d-422b-8dcd-e8d520f0c322,D.Front Team - New page with the visualizable elements - Visualization in Page,"Sheet: Stimation
+Requirement: Grid Visualization
+Team: D.Front Team
+MacroActivity: New page with the visualizable elements
+Activity: Visualization in Page
+Estimation (days): 1.5",Audit_Alarms_KnowledgeBase_merged.csv,Stimation,"{""source_file"": ""Audit_Alarms_KnowledgeBase_merged.csv"", ""sheet"": ""Stimation"", ""requirements"": ""Grid Visualization"", ""value"": ""none"", ""team"": ""D.Front Team"", ""macro_activity"": ""New page with the visualizable elements"", ""activity"": ""Visualization in Page"", ""profile"": ""none"", ""rate_per_day"": ""none"", ""estimation_days"": 1.5}"
+4a27459d-965a-492d-802a-43671c152041,C.Calculation Team - Grid Visualization DERMS/ TL - Flag for the visualizable elements On/off,"Sheet: Stimation
+Requirement: Grid Visualization
+Team: C.Calculation Team
+MacroActivity: Grid Visualization DERMS/ TL
+Activity: Flag for the visualizable elements On/off
+Estimation (days): 0.0",Audit_Alarms_KnowledgeBase_merged.csv,Stimation,"{""source_file"": ""Audit_Alarms_KnowledgeBase_merged.csv"", ""sheet"": ""Stimation"", ""requirements"": ""Grid Visualization"", ""value"": ""none"", ""team"": ""C.Calculation Team"", ""macro_activity"": ""Grid Visualization DERMS/ TL"", ""activity"": ""Flag for the visualizable elements On/off"", ""profile"": ""none"", ""rate_per_day"": ""none"", ""estimation_days"": 0.0}"
+b22a2fed-6626-4507-9cca-69ccac97f81a,D.Front Team - Grid Visualization DERMS/ TL - Flag for the visualizable elements On/off,"Sheet: Stimation
+Requirement: Grid Visualization
+Team: D.Front Team
+MacroActivity: Grid Visualization DERMS/ TL
+Activity: Flag for the visualizable elements On/off
+Estimation (days): 1.5",Audit_Alarms_KnowledgeBase_merged.csv,Stimation,"{""source_file"": ""Audit_Alarms_KnowledgeBase_merged.csv"", ""sheet"": ""Stimation"", ""requirements"": ""Grid Visualization"", ""value"": ""none"", ""team"": ""D.Front Team"", ""macro_activity"": ""Grid Visualization DERMS/ TL"", ""activity"": ""Flag for the visualizable elements On/off"", ""profile"": ""none"", ""rate_per_day"": ""none"", ""estimation_days"": 1.5}"
+859db4eb-780c-43be-acdf-babc947a1057,C.Calculation Team - Grid Visualization DERMS/ TL - Time Filter,"Sheet: Stimation
+Requirement: Grid Visualization
+Team: C.Calculation Team
+MacroActivity: Grid Visualization DERMS/ TL
+Activity: Time Filter
+Estimation (days): 2.0",Audit_Alarms_KnowledgeBase_merged.csv,Stimation,"{""source_file"": ""Audit_Alarms_KnowledgeBase_merged.csv"", ""sheet"": ""Stimation"", ""requirements"": ""Grid Visualization"", ""value"": ""none"", ""team"": ""C.Calculation Team"", ""macro_activity"": ""Grid Visualization DERMS/ TL"", ""activity"": ""Time Filter"", ""profile"": ""none"", ""rate_per_day"": ""none"", ""estimation_days"": 2.0}"
+3f214eff-099e-4d4f-af94-d52b8001d7b0,D.Front Team - Grid Visualization DERMS/ TL - Time Filter,"Sheet: Stimation
+Requirement: Grid Visualization
+Team: D.Front Team
+MacroActivity: Grid Visualization DERMS/ TL
+Activity: Time Filter
+Estimation (days): 3.0",Audit_Alarms_KnowledgeBase_merged.csv,Stimation,"{""source_file"": ""Audit_Alarms_KnowledgeBase_merged.csv"", ""sheet"": ""Stimation"", ""requirements"": ""Grid Visualization"", ""value"": ""none"", ""team"": ""D.Front Team"", ""macro_activity"": ""Grid Visualization DERMS/ TL"", ""activity"": ""Time Filter"", ""profile"": ""none"", ""rate_per_day"": ""none"", ""estimation_days"": 3.0}"
+7ca9b59f-65b9-4ba6-a273-63b4d4ad1556,C.Calculation Team - Grid Visualization DERMS/ TL - Capacity to select the Grid (P; P+;P-),"Sheet: Stimation
+Requirement: Grid Visualization
+Team: C.Calculation Team
+MacroActivity: Grid Visualization DERMS/ TL
+Activity: Capacity to select the Grid (P; P+;P-)
+Estimation (days): 0.0",Audit_Alarms_KnowledgeBase_merged.csv,Stimation,"{""source_file"": ""Audit_Alarms_KnowledgeBase_merged.csv"", ""sheet"": ""Stimation"", ""requirements"": ""Grid Visualization"", ""value"": ""none"", ""team"": ""C.Calculation Team"", ""macro_activity"": ""Grid Visualization DERMS/ TL"", ""activity"": ""Capacity to select the Grid (P; P+;P-)"", ""profile"": ""none"", ""rate_per_day"": ""none"", ""estimation_days"": 0.0}"
+e2233df2-9537-40df-bda6-2116a23ab603,D.Front Team - Grid Visualization DERMS/ TL - Capacity to select the Grid (P; P+;P-),"Sheet: Stimation
+Requirement: Grid Visualization
+Team: D.Front Team
+MacroActivity: Grid Visualization DERMS/ TL
+Activity: Capacity to select the Grid (P; P+;P-)
+Estimation (days): 3.0",Audit_Alarms_KnowledgeBase_merged.csv,Stimation,"{""source_file"": ""Audit_Alarms_KnowledgeBase_merged.csv"", ""sheet"": ""Stimation"", ""requirements"": ""Grid Visualization"", ""value"": ""none"", ""team"": ""D.Front Team"", ""macro_activity"": ""Grid Visualization DERMS/ TL"", ""activity"": ""Capacity to select the Grid (P; P+;P-)"", ""profile"": ""none"", ""rate_per_day"": ""none"", ""estimation_days"": 3.0}"
+dd019b5e-5d82-4a24-9286-d678f7d09145,C.Calculation Team - Manual Activation from grid visualization - Manual Activation from grid visualization,"Sheet: Stimation
+Requirement: Grid Visualization
+Team: C.Calculation Team
+MacroActivity: Manual Activation from grid visualization
+Activity: Manual Activation from grid visualization
+Estimation (days): 2.0",Audit_Alarms_KnowledgeBase_merged.csv,Stimation,"{""source_file"": ""Audit_Alarms_KnowledgeBase_merged.csv"", ""sheet"": ""Stimation"", ""requirements"": ""Grid Visualization"", ""value"": ""none"", ""team"": ""C.Calculation Team"", ""macro_activity"": ""Manual Activation from grid visualization"", ""activity"": ""Manual Activation from grid visualization"", ""profile"": ""none"", ""rate_per_day"": ""none"", ""estimation_days"": 2.0}"
+741fd118-f6e6-43fb-b282-3af4ecb9cb16,D.Front Team - Manual Activation from grid visualization - Manual Activation from grid visualization,"Sheet: Stimation
+Requirement: Grid Visualization
+Team: D.Front Team
+MacroActivity: Manual Activation from grid visualization
+Activity: Manual Activation from grid visualization
+Estimation (days): 4.0",Audit_Alarms_KnowledgeBase_merged.csv,Stimation,"{""source_file"": ""Audit_Alarms_KnowledgeBase_merged.csv"", ""sheet"": ""Stimation"", ""requirements"": ""Grid Visualization"", ""value"": ""none"", ""team"": ""D.Front Team"", ""macro_activity"": ""Manual Activation from grid visualization"", ""activity"": ""Manual Activation from grid visualization"", ""profile"": ""none"", ""rate_per_day"": ""none"", ""estimation_days"": 4.0}"
+a71bcc70-ed53-4cc6-8098-638261b97947,C.Calculation Team - Storage grid topology for 1 day - Storage grid topology for 1 day,"Sheet: Stimation
+Requirement: Grid Visualization
+Team: C.Calculation Team
+MacroActivity: Storage grid topology for 1 day
+Activity: Storage grid topology for 1 day
+Estimation (days): 5.0",Audit_Alarms_KnowledgeBase_merged.csv,Stimation,"{""source_file"": ""Audit_Alarms_KnowledgeBase_merged.csv"", ""sheet"": ""Stimation"", ""requirements"": ""Grid Visualization"", ""value"": ""none"", ""team"": ""C.Calculation Team"", ""macro_activity"": ""Storage grid topology for 1 day"", ""activity"": ""Storage grid topology for 1 day"", ""profile"": ""none"", ""rate_per_day"": ""none"", ""estimation_days"": 5.0}"
+447f44fc-c2e8-43fa-864b-7f4d4581a99d,C.Calculation Team - Improve grid visualization with PUC data - Improve grid visualization with PUC data,"Sheet: Stimation
+Requirement: Grid Visualization
+Team: C.Calculation Team
+MacroActivity: Improve grid visualization with PUC data
+Activity: Improve grid visualization with PUC data",Audit_Alarms_KnowledgeBase_merged.csv,Stimation,"{""source_file"": ""Audit_Alarms_KnowledgeBase_merged.csv"", ""sheet"": ""Stimation"", ""requirements"": ""Grid Visualization"", ""value"": ""none"", ""team"": ""C.Calculation Team"", ""macro_activity"": ""Improve grid visualization with PUC data"", ""activity"": ""Improve grid visualization with PUC data"", ""profile"": ""none"", ""rate_per_day"": ""none"", ""estimation_days"": NaN}"
+456547ee-6c11-48b6-a7ce-aa1c0aa8f5a7,D.Front Team - Improve grid visualization with PUC data,"Sheet: Stimation
+Requirement: Grid Visualization
+Team: D.Front Team
+MacroActivity: Improve grid visualization with PUC data",Audit_Alarms_KnowledgeBase_merged.csv,Stimation,"{""source_file"": ""Audit_Alarms_KnowledgeBase_merged.csv"", ""sheet"": ""Stimation"", ""requirements"": ""Grid Visualization"", ""value"": ""none"", ""team"": ""D.Front Team"", ""macro_activity"": ""Improve grid visualization with PUC data"", ""activity"": ""none"", ""profile"": ""none"", ""rate_per_day"": ""none"", ""estimation_days"": NaN}"
+4f16da66-7f75-4613-aec8-5239f083b814,C.Calculation Team - Identify grid saturation - Identify grid saturation,"Sheet: Stimation
+Requirement: Grid Visualization
+Team: C.Calculation Team
+MacroActivity: Identify grid saturation
+Activity: Identify grid saturation
+Estimation (days): 3.0",Audit_Alarms_KnowledgeBase_merged.csv,Stimation,"{""source_file"": ""Audit_Alarms_KnowledgeBase_merged.csv"", ""sheet"": ""Stimation"", ""requirements"": ""Grid Visualization"", ""value"": ""none"", ""team"": ""C.Calculation Team"", ""macro_activity"": ""Identify grid saturation"", ""activity"": ""Identify grid saturation"", ""profile"": ""none"", ""rate_per_day"": ""none"", ""estimation_days"": 3.0}"
+0be43c94-e302-442a-8735-f5713a9970e9,D.Front Team - Identify grid saturation - Show grid saturation,"Sheet: Stimation
+Requirement: Grid Visualization
+Team: D.Front Team
+MacroActivity: Identify grid saturation
+Activity: Show grid saturation
+Estimation (days): 2.0",Audit_Alarms_KnowledgeBase_merged.csv,Stimation,"{""source_file"": ""Audit_Alarms_KnowledgeBase_merged.csv"", ""sheet"": ""Stimation"", ""requirements"": ""Grid Visualization"", ""value"": ""none"", ""team"": ""D.Front Team"", ""macro_activity"": ""Identify grid saturation"", ""activity"": ""Show grid saturation"", ""profile"": ""none"", ""rate_per_day"": ""none"", ""estimation_days"": 2.0}"
+fac62b12-360b-4188-8435-c66db55052d4,C.Calculation Team - Load flow for specific periods and display the result - Load flow for specific periods and display the result,"Sheet: Stimation
+Requirement: Grid Visualization
+Team: C.Calculation Team
+MacroActivity: Load flow for specific periods and display the result
+Activity: Load flow for specific periods and display the result
+Estimation (days): 3.0",Audit_Alarms_KnowledgeBase_merged.csv,Stimation,"{""source_file"": ""Audit_Alarms_KnowledgeBase_merged.csv"", ""sheet"": ""Stimation"", ""requirements"": ""Grid Visualization"", ""value"": ""none"", ""team"": ""C.Calculation Team"", ""macro_activity"": ""Load flow for specific periods and display the result"", ""activity"": ""Load flow for specific periods and display the result"", ""profile"": ""none"", ""rate_per_day"": ""none"", ""estimation_days"": 3.0}"
+f26e90d7-8cd2-492a-89e8-3697e2963b3c,D.Front Team - Load flow for specific periods and display the result - Load flow for specific periods and display the result,"Sheet: Stimation
+Requirement: Grid Visualization
+Team: D.Front Team
+MacroActivity: Load flow for specific periods and display the result
+Activity: Load flow for specific periods and display the result
+Estimation (days): 2.0",Audit_Alarms_KnowledgeBase_merged.csv,Stimation,"{""source_file"": ""Audit_Alarms_KnowledgeBase_merged.csv"", ""sheet"": ""Stimation"", ""requirements"": ""Grid Visualization"", ""value"": ""none"", ""team"": ""D.Front Team"", ""macro_activity"": ""Load flow for specific periods and display the result"", ""activity"": ""Load flow for specific periods and display the result"", ""profile"": ""none"", ""rate_per_day"": ""none"", ""estimation_days"": 2.0}"
+d07d805f-c311-41aa-b396-480ccdcb6790,C.Calculation Team - Improve performance - Improve performance,"Sheet: Stimation
+Requirement: Grid Visualization
+Team: C.Calculation Team
+MacroActivity: Improve performance
+Activity: Improve performance",Audit_Alarms_KnowledgeBase_merged.csv,Stimation,"{""source_file"": ""Audit_Alarms_KnowledgeBase_merged.csv"", ""sheet"": ""Stimation"", ""requirements"": ""Grid Visualization"", ""value"": ""none"", ""team"": ""C.Calculation Team"", ""macro_activity"": ""Improve performance"", ""activity"": ""Improve performance"", ""profile"": ""none"", ""rate_per_day"": ""none"", ""estimation_days"": NaN}"
+2a5ee470-e21e-4462-904f-eb876ee79093,D.Front Team - Improve performance - Improve performance,"Sheet: Stimation
+Requirement: Grid Visualization
+Team: D.Front Team
+MacroActivity: Improve performance
+Activity: Improve performance",Audit_Alarms_KnowledgeBase_merged.csv,Stimation,"{""source_file"": ""Audit_Alarms_KnowledgeBase_merged.csv"", ""sheet"": ""Stimation"", ""requirements"": ""Grid Visualization"", ""value"": ""none"", ""team"": ""D.Front Team"", ""macro_activity"": ""Improve performance"", ""activity"": ""Improve performance"", ""profile"": ""none"", ""rate_per_day"": ""none"", ""estimation_days"": NaN}"
+129f347b-d814-489b-8b37-97110b5f7ddb,D.Front Team - Manage Grid Role - Manage Grid Role,"Sheet: Stimation
+Requirement: Grid Visualization
+Team: D.Front Team
+MacroActivity: Manage Grid Role
+Activity: Manage Grid Role
+Estimation (days): 2.0",Audit_Alarms_KnowledgeBase_merged.csv,Stimation,"{""source_file"": ""Audit_Alarms_KnowledgeBase_merged.csv"", ""sheet"": ""Stimation"", ""requirements"": ""Grid Visualization"", ""value"": ""none"", ""team"": ""D.Front Team"", ""macro_activity"": ""Manage Grid Role"", ""activity"": ""Manage Grid Role"", ""profile"": ""none"", ""rate_per_day"": ""none"", ""estimation_days"": 2.0}"
+7ed1a0f5-0ad0-44fa-9d3d-0b996ae3f4a1,D.Front Team - Manage Visualization Items Role - Manage Visualization Items Role,"Sheet: Stimation
+Requirement: Grid Visualization
+Team: D.Front Team
+MacroActivity: Manage Visualization Items Role
+Activity: Manage Visualization Items Role
+Estimation (days): 2.0",Audit_Alarms_KnowledgeBase_merged.csv,Stimation,"{""source_file"": ""Audit_Alarms_KnowledgeBase_merged.csv"", ""sheet"": ""Stimation"", ""requirements"": ""Grid Visualization"", ""value"": ""none"", ""team"": ""D.Front Team"", ""macro_activity"": ""Manage Visualization Items Role"", ""activity"": ""Manage Visualization Items Role"", ""profile"": ""none"", ""rate_per_day"": ""none"", ""estimation_days"": 2.0}"
+60ae731a-a05b-455e-93b2-9612c1cc1d3a,E.GENERAL - Analisis & design - Analisis & design,"Sheet: Stimation
+Requirement: Grid Visualization
+Team: E.GENERAL
+MacroActivity: Analisis & design
+Activity: Analisis & design
+Estimation (days): 5.0",Audit_Alarms_KnowledgeBase_merged.csv,Stimation,"{""source_file"": ""Audit_Alarms_KnowledgeBase_merged.csv"", ""sheet"": ""Stimation"", ""requirements"": ""Grid Visualization"", ""value"": ""none"", ""team"": ""E.GENERAL"", ""macro_activity"": ""Analisis & design"", ""activity"": ""Analisis & design"", ""profile"": ""none"", ""rate_per_day"": ""none"", ""estimation_days"": 5.0}"
+c0537679-638c-4d28-a4d2-88ccd6408a10,E.GENERAL - Training - Training,"Sheet: Stimation
+Requirement: Grid Visualization
+Team: E.GENERAL
+MacroActivity: Training
+Activity: Training
+Estimation (days): 3.0",Audit_Alarms_KnowledgeBase_merged.csv,Stimation,"{""source_file"": ""Audit_Alarms_KnowledgeBase_merged.csv"", ""sheet"": ""Stimation"", ""requirements"": ""Grid Visualization"", ""value"": ""none"", ""team"": ""E.GENERAL"", ""macro_activity"": ""Training"", ""activity"": ""Training"", ""profile"": ""none"", ""rate_per_day"": ""none"", ""estimation_days"": 3.0}"
+86118976-6f61-4e6a-85b2-a2758124284e,E.GENERAL - Manual - Manual,"Sheet: Stimation
+Requirement: Grid Visualization
+Team: E.GENERAL
+MacroActivity: Manual
+Activity: Manual
+Estimation (days): 8.0",Audit_Alarms_KnowledgeBase_merged.csv,Stimation,"{""source_file"": ""Audit_Alarms_KnowledgeBase_merged.csv"", ""sheet"": ""Stimation"", ""requirements"": ""Grid Visualization"", ""value"": ""none"", ""team"": ""E.GENERAL"", ""macro_activity"": ""Manual"", ""activity"": ""Manual"", ""profile"": ""none"", ""rate_per_day"": ""none"", ""estimation_days"": 8.0}"
+6b8fcf50-97d9-4fe7-ae6f-8c02267e66e1,E.GENERAL - UAT Grid Visualization - UAT Grid Visualization,"Sheet: Stimation
+Requirement: Grid Visualization
+Team: E.GENERAL
+MacroActivity: UAT Grid Visualization
+Activity: UAT Grid Visualization
+Estimation (days): 2.0",Audit_Alarms_KnowledgeBase_merged.csv,Stimation,"{""source_file"": ""Audit_Alarms_KnowledgeBase_merged.csv"", ""sheet"": ""Stimation"", ""requirements"": ""Grid Visualization"", ""value"": ""none"", ""team"": ""E.GENERAL"", ""macro_activity"": ""UAT Grid Visualization"", ""activity"": ""UAT Grid Visualization"", ""profile"": ""none"", ""rate_per_day"": ""none"", ""estimation_days"": 2.0}"
+bbb60857-f935-43f4-9b5d-f27be1d15874,E.GENERAL - UAT Items Visualization - UAT Items Visualization,"Sheet: Stimation
+Requirement: Grid Visualization
+Team: E.GENERAL
+MacroActivity: UAT Items Visualization
+Activity: UAT Items Visualization
+Estimation (days): 2.0",Audit_Alarms_KnowledgeBase_merged.csv,Stimation,"{""source_file"": ""Audit_Alarms_KnowledgeBase_merged.csv"", ""sheet"": ""Stimation"", ""requirements"": ""Grid Visualization"", ""value"": ""none"", ""team"": ""E.GENERAL"", ""macro_activity"": ""UAT Items Visualization"", ""activity"": ""UAT Items Visualization"", ""profile"": ""none"", ""rate_per_day"": ""none"", ""estimation_days"": 2.0}"
+812e2c89-d884-433c-aa77-451bf3b91234,E.GENERAL - Definition - Alarms Definition,"Sheet: Stimation
+Requirement: Alarms Module
+Team: E.GENERAL
+MacroActivity: Definition
+Activity: Alarms Definition
+Estimation (days): 10.0",Audit_Alarms_KnowledgeBase_merged.csv,Stimation,"{""source_file"": ""Audit_Alarms_KnowledgeBase_merged.csv"", ""sheet"": ""Stimation"", ""requirements"": ""Alarms Module"", ""value"": ""none"", ""team"": ""E.GENERAL"", ""macro_activity"": ""Definition"", ""activity"": ""Alarms Definition"", ""profile"": ""none"", ""rate_per_day"": ""none"", ""estimation_days"": 10.0}"
+c0243f5f-99cc-4e3e-9a1c-3e611ceef8e2,E.GENERAL - Definition - Definition Document,"Sheet: Stimation
+Requirement: Alarms Module
+Team: E.GENERAL
+MacroActivity: Definition
+Activity: Definition Document
+Estimation (days): 10.0",Audit_Alarms_KnowledgeBase_merged.csv,Stimation,"{""source_file"": ""Audit_Alarms_KnowledgeBase_merged.csv"", ""sheet"": ""Stimation"", ""requirements"": ""Alarms Module"", ""value"": ""none"", ""team"": ""E.GENERAL"", ""macro_activity"": ""Definition"", ""activity"": ""Definition Document"", ""profile"": ""none"", ""rate_per_day"": ""none"", ""estimation_days"": 10.0}"
+30fe3cf7-d27e-4e8e-a448-4eea71068a7c,E.GENERAL - Training - Training,"Sheet: Stimation
+Requirement: Alarms Module
+Team: E.GENERAL
+MacroActivity: Training
+Activity: Training
+Estimation (days): 5.0",Audit_Alarms_KnowledgeBase_merged.csv,Stimation,"{""source_file"": ""Audit_Alarms_KnowledgeBase_merged.csv"", ""sheet"": ""Stimation"", ""requirements"": ""Alarms Module"", ""value"": ""none"", ""team"": ""E.GENERAL"", ""macro_activity"": ""Training"", ""activity"": ""Training"", ""profile"": ""none"", ""rate_per_day"": ""none"", ""estimation_days"": 5.0}"
+831b0d59-321f-459c-a18b-23a32ee2e9b0,E.GENERAL - Manual - Manual,"Sheet: Stimation
+Requirement: Alarms Module
+Team: E.GENERAL
+MacroActivity: Manual
+Activity: Manual
+Estimation (days): 15.0",Audit_Alarms_KnowledgeBase_merged.csv,Stimation,"{""source_file"": ""Audit_Alarms_KnowledgeBase_merged.csv"", ""sheet"": ""Stimation"", ""requirements"": ""Alarms Module"", ""value"": ""none"", ""team"": ""E.GENERAL"", ""macro_activity"": ""Manual"", ""activity"": ""Manual"", ""profile"": ""none"", ""rate_per_day"": ""none"", ""estimation_days"": 15.0}"
+7cb24432-a60a-4c39-86a9-d811ac8b181f,E.GENERAL - UAT - UAT,"Sheet: Stimation
+Requirement: Alarms Module
+Team: E.GENERAL
+MacroActivity: UAT
+Activity: UAT
+Estimation (days): 15.0",Audit_Alarms_KnowledgeBase_merged.csv,Stimation,"{""source_file"": ""Audit_Alarms_KnowledgeBase_merged.csv"", ""sheet"": ""Stimation"", ""requirements"": ""Alarms Module"", ""value"": ""none"", ""team"": ""E.GENERAL"", ""macro_activity"": ""UAT"", ""activity"": ""UAT"", ""profile"": ""none"", ""rate_per_day"": ""none"", ""estimation_days"": 15.0}"
+124eade1-07eb-42bf-b2b0-e6d3c279d9a7,B.Flexibility Team - Alarms Module - Alarms module definition,"Sheet: Stimation
+Requirement: Alarms Module
+Team: B.Flexibility Team
+MacroActivity: Alarms Module
+Activity: Alarms module definition
+Estimation (days): 4.0",Audit_Alarms_KnowledgeBase_merged.csv,Stimation,"{""source_file"": ""Audit_Alarms_KnowledgeBase_merged.csv"", ""sheet"": ""Stimation"", ""requirements"": ""Alarms Module"", ""value"": ""none"", ""team"": ""B.Flexibility Team"", ""macro_activity"": ""Alarms Module"", ""activity"": ""Alarms module definition"", ""profile"": ""none"", ""rate_per_day"": ""none"", ""estimation_days"": 4.0}"
+527142b1-5a93-4163-9790-be04a06f5fc1,B.Flexibility Team - Alarms Module - Create Submodule,"Sheet: Stimation
+Requirement: Alarms Module
+Team: B.Flexibility Team
+MacroActivity: Alarms Module
+Activity: Create Submodule
+Estimation (days): 3.0",Audit_Alarms_KnowledgeBase_merged.csv,Stimation,"{""source_file"": ""Audit_Alarms_KnowledgeBase_merged.csv"", ""sheet"": ""Stimation"", ""requirements"": ""Alarms Module"", ""value"": ""none"", ""team"": ""B.Flexibility Team"", ""macro_activity"": ""Alarms Module"", ""activity"": ""Create Submodule"", ""profile"": ""none"", ""rate_per_day"": ""none"", ""estimation_days"": 3.0}"
+0e9ac607-fb7e-4de3-b61e-ea2e67f7d8cf,B.Flexibility Team - Alarms Module - Create Detail page + Functionalities,"Sheet: Stimation
+Requirement: Alarms Module
+Team: B.Flexibility Team
+MacroActivity: Alarms Module
+Activity: Create Detail page + Functionalities
+Estimation (days): 8.0",Audit_Alarms_KnowledgeBase_merged.csv,Stimation,"{""source_file"": ""Audit_Alarms_KnowledgeBase_merged.csv"", ""sheet"": ""Stimation"", ""requirements"": ""Alarms Module"", ""value"": ""none"", ""team"": ""B.Flexibility Team"", ""macro_activity"": ""Alarms Module"", ""activity"": ""Create Detail page + Functionalities"", ""profile"": ""none"", ""rate_per_day"": ""none"", ""estimation_days"": 8.0}"
+6ef2c949-61b7-43cf-910a-bedeb206109a,B.Flexibility Team - Alarms Module - Create Roles & Permissions for the new page,"Sheet: Stimation
+Requirement: Alarms Module
+Team: B.Flexibility Team
+MacroActivity: Alarms Module
+Activity: Create Roles & Permissions for the new page
+Estimation (days): 2.0",Audit_Alarms_KnowledgeBase_merged.csv,Stimation,"{""source_file"": ""Audit_Alarms_KnowledgeBase_merged.csv"", ""sheet"": ""Stimation"", ""requirements"": ""Alarms Module"", ""value"": ""none"", ""team"": ""B.Flexibility Team"", ""macro_activity"": ""Alarms Module"", ""activity"": ""Create Roles & Permissions for the new page"", ""profile"": ""none"", ""rate_per_day"": ""none"", ""estimation_days"": 2.0}"
+3e26b508-2d6f-49e1-bbec-7b2f11f1dc30,B.Flexibility Team - Alarms Module - Model a Listener/ Batch process (to trigger allarms),"Sheet: Stimation
+Requirement: Alarms Module
+Team: B.Flexibility Team
+MacroActivity: Alarms Module
+Activity: Model a Listener/ Batch process (to trigger allarms)
+Estimation (days): 1.0",Audit_Alarms_KnowledgeBase_merged.csv,Stimation,"{""source_file"": ""Audit_Alarms_KnowledgeBase_merged.csv"", ""sheet"": ""Stimation"", ""requirements"": ""Alarms Module"", ""value"": ""none"", ""team"": ""B.Flexibility Team"", ""macro_activity"": ""Alarms Module"", ""activity"": ""Model a Listener/ Batch process (to trigger allarms)"", ""profile"": ""none"", ""rate_per_day"": ""none"", ""estimation_days"": 1.0}"
+262f87ca-3efd-4c3a-bfa3-f9b4cc403d40,D.Front Team - Alarms Module - Create Submodule,"Sheet: Stimation
+Requirement: Alarms Module
+Team: D.Front Team
+MacroActivity: Alarms Module
+Activity: Create Submodule
+Estimation (days): 5.0",Audit_Alarms_KnowledgeBase_merged.csv,Stimation,"{""source_file"": ""Audit_Alarms_KnowledgeBase_merged.csv"", ""sheet"": ""Stimation"", ""requirements"": ""Alarms Module"", ""value"": ""none"", ""team"": ""D.Front Team"", ""macro_activity"": ""Alarms Module"", ""activity"": ""Create Submodule"", ""profile"": ""none"", ""rate_per_day"": ""none"", ""estimation_days"": 5.0}"
+99c03a7f-80da-401e-9526-8784e75fa385,D.Front Team - Alarms Module - Create Detail page + Functionalities,"Sheet: Stimation
+Requirement: Alarms Module
+Team: D.Front Team
+MacroActivity: Alarms Module
+Activity: Create Detail page + Functionalities
+Estimation (days): 5.0",Audit_Alarms_KnowledgeBase_merged.csv,Stimation,"{""source_file"": ""Audit_Alarms_KnowledgeBase_merged.csv"", ""sheet"": ""Stimation"", ""requirements"": ""Alarms Module"", ""value"": ""none"", ""team"": ""D.Front Team"", ""macro_activity"": ""Alarms Module"", ""activity"": ""Create Detail page + Functionalities"", ""profile"": ""none"", ""rate_per_day"": ""none"", ""estimation_days"": 5.0}"
+aec3b9b9-138a-4c9b-a638-c840d067048f,B.Flexibility Team - Companies module - Refactor Companies alarms,"Sheet: Stimation
+Requirement: Alarms Module
+Team: B.Flexibility Team
+MacroActivity: Companies module
+Activity: Refactor Companies alarms
+Estimation (days): 5.0",Audit_Alarms_KnowledgeBase_merged.csv,Stimation,"{""source_file"": ""Audit_Alarms_KnowledgeBase_merged.csv"", ""sheet"": ""Stimation"", ""requirements"": ""Alarms Module"", ""value"": ""none"", ""team"": ""B.Flexibility Team"", ""macro_activity"": ""Companies module"", ""activity"": ""Refactor Companies alarms"", ""profile"": ""none"", ""rate_per_day"": ""none"", ""estimation_days"": 5.0}"
+d11f9e69-4ca5-4bdc-9b42-b418cd016872,D.Front Team - Companies module - Refactor Companies alarms,"Sheet: Stimation
+Requirement: Alarms Module
+Team: D.Front Team
+MacroActivity: Companies module
+Activity: Refactor Companies alarms
+Estimation (days): 3.0",Audit_Alarms_KnowledgeBase_merged.csv,Stimation,"{""source_file"": ""Audit_Alarms_KnowledgeBase_merged.csv"", ""sheet"": ""Stimation"", ""requirements"": ""Alarms Module"", ""value"": ""none"", ""team"": ""D.Front Team"", ""macro_activity"": ""Companies module"", ""activity"": ""Refactor Companies alarms"", ""profile"": ""none"", ""rate_per_day"": ""none"", ""estimation_days"": 3.0}"
+512feb3d-aa7d-4ca5-a6ee-fddecd1e07b5,C.Calculation Team - Grid criticality Alarm - Definition,"Sheet: Stimation
+Requirement: Alarms Module
+Team: C.Calculation Team
+MacroActivity: Grid criticality Alarm
+Activity: Definition
+Estimation (days): 5.0",Audit_Alarms_KnowledgeBase_merged.csv,Stimation,"{""source_file"": ""Audit_Alarms_KnowledgeBase_merged.csv"", ""sheet"": ""Stimation"", ""requirements"": ""Alarms Module"", ""value"": ""none"", ""team"": ""C.Calculation Team"", ""macro_activity"": ""Grid criticality Alarm"", ""activity"": ""Definition"", ""profile"": ""none"", ""rate_per_day"": ""none"", ""estimation_days"": 5.0}"
+529a7737-dad1-4303-987e-7c38ca461b0f,"B.Flexibility Team - Grid criticality Alarm - estructure (type,trigger, notification, users…)","Sheet: Stimation
+Requirement: Alarms Module
+Team: B.Flexibility Team
+MacroActivity: Grid criticality Alarm
+Activity: estructure (type,trigger, notification, users…)
+Estimation (days): 5.0",Audit_Alarms_KnowledgeBase_merged.csv,Stimation,"{""source_file"": ""Audit_Alarms_KnowledgeBase_merged.csv"", ""sheet"": ""Stimation"", ""requirements"": ""Alarms Module"", ""value"": ""none"", ""team"": ""B.Flexibility Team"", ""macro_activity"": ""Grid criticality Alarm"", ""activity"": ""estructure (type,trigger, notification, users…)"", ""profile"": ""none"", ""rate_per_day"": ""none"", ""estimation_days"": 5.0}"
+e899ca0b-08ab-4a81-9fc3-603e9cc61cdf,C.Calculation Team - Grid criticality Alarm - Retrieve allarms,"Sheet: Stimation
+Requirement: Alarms Module
+Team: C.Calculation Team
+MacroActivity: Grid criticality Alarm
+Activity: Retrieve allarms
+Estimation (days): 3.0",Audit_Alarms_KnowledgeBase_merged.csv,Stimation,"{""source_file"": ""Audit_Alarms_KnowledgeBase_merged.csv"", ""sheet"": ""Stimation"", ""requirements"": ""Alarms Module"", ""value"": ""none"", ""team"": ""C.Calculation Team"", ""macro_activity"": ""Grid criticality Alarm"", ""activity"": ""Retrieve allarms"", ""profile"": ""none"", ""rate_per_day"": ""none"", ""estimation_days"": 3.0}"
+1bc78cd4-9126-4316-b2cc-5666e1ae1e3c,C.Calculation Team - Grid criticality Alarm - Include the alarms in the workflow,"Sheet: Stimation
+Requirement: Alarms Module
+Team: C.Calculation Team
+MacroActivity: Grid criticality Alarm
+Activity: Include the alarms in the workflow
+Estimation (days): 10.0",Audit_Alarms_KnowledgeBase_merged.csv,Stimation,"{""source_file"": ""Audit_Alarms_KnowledgeBase_merged.csv"", ""sheet"": ""Stimation"", ""requirements"": ""Alarms Module"", ""value"": ""none"", ""team"": ""C.Calculation Team"", ""macro_activity"": ""Grid criticality Alarm"", ""activity"": ""Include the alarms in the workflow"", ""profile"": ""none"", ""rate_per_day"": ""none"", ""estimation_days"": 10.0}"
+b8ca150e-7406-4088-aefa-a570cf1abbec,C.Calculation Team - Grid criticality Alarm - Trigger allarm,"Sheet: Stimation
+Requirement: Alarms Module
+Team: C.Calculation Team
+MacroActivity: Grid criticality Alarm
+Activity: Trigger allarm
+Estimation (days): 2.0",Audit_Alarms_KnowledgeBase_merged.csv,Stimation,"{""source_file"": ""Audit_Alarms_KnowledgeBase_merged.csv"", ""sheet"": ""Stimation"", ""requirements"": ""Alarms Module"", ""value"": ""none"", ""team"": ""C.Calculation Team"", ""macro_activity"": ""Grid criticality Alarm"", ""activity"": ""Trigger allarm"", ""profile"": ""none"", ""rate_per_day"": ""none"", ""estimation_days"": 2.0}"
+3ed415ce-51a1-4351-8284-ac589b783b4c,A.Platform Team - Grid Error Alarm - Definition,"Sheet: Stimation
+Requirement: Alarms Module
+Team: A.Platform Team
+MacroActivity: Grid Error Alarm
+Activity: Definition
+Estimation (days): 10.0",Audit_Alarms_KnowledgeBase_merged.csv,Stimation,"{""source_file"": ""Audit_Alarms_KnowledgeBase_merged.csv"", ""sheet"": ""Stimation"", ""requirements"": ""Alarms Module"", ""value"": ""none"", ""team"": ""A.Platform Team"", ""macro_activity"": ""Grid Error Alarm"", ""activity"": ""Definition"", ""profile"": ""none"", ""rate_per_day"": ""none"", ""estimation_days"": 10.0}"
+d0a2ffe8-b83b-4674-bb8e-37e986fecfc3,"B.Flexibility Team - Grid Error Alarm - estructure (type,trigger, notification, users…)","Sheet: Stimation
+Requirement: Alarms Module
+Team: B.Flexibility Team
+MacroActivity: Grid Error Alarm
+Activity: estructure (type,trigger, notification, users…)
+Estimation (days): 5.0",Audit_Alarms_KnowledgeBase_merged.csv,Stimation,"{""source_file"": ""Audit_Alarms_KnowledgeBase_merged.csv"", ""sheet"": ""Stimation"", ""requirements"": ""Alarms Module"", ""value"": ""none"", ""team"": ""B.Flexibility Team"", ""macro_activity"": ""Grid Error Alarm"", ""activity"": ""estructure (type,trigger, notification, users…)"", ""profile"": ""none"", ""rate_per_day"": ""none"", ""estimation_days"": 5.0}"
+2c353735-a75a-4a44-a1a5-51418bff41ae,A.Platform Team - Grid Error Alarm - Retrieve allarms,"Sheet: Stimation
+Requirement: Alarms Module
+Team: A.Platform Team
+MacroActivity: Grid Error Alarm
+Activity: Retrieve allarms
+Estimation (days): 3.0",Audit_Alarms_KnowledgeBase_merged.csv,Stimation,"{""source_file"": ""Audit_Alarms_KnowledgeBase_merged.csv"", ""sheet"": ""Stimation"", ""requirements"": ""Alarms Module"", ""value"": ""none"", ""team"": ""A.Platform Team"", ""macro_activity"": ""Grid Error Alarm"", ""activity"": ""Retrieve allarms"", ""profile"": ""none"", ""rate_per_day"": ""none"", ""estimation_days"": 3.0}"
+840d058f-7e03-4342-9c08-9afb2596bc97,A.Platform Team - Grid Error Alarm - Include the alarms in the workflow,"Sheet: Stimation
+Requirement: Alarms Module
+Team: A.Platform Team
+MacroActivity: Grid Error Alarm
+Activity: Include the alarms in the workflow
+Estimation (days): 15.0",Audit_Alarms_KnowledgeBase_merged.csv,Stimation,"{""source_file"": ""Audit_Alarms_KnowledgeBase_merged.csv"", ""sheet"": ""Stimation"", ""requirements"": ""Alarms Module"", ""value"": ""none"", ""team"": ""A.Platform Team"", ""macro_activity"": ""Grid Error Alarm"", ""activity"": ""Include the alarms in the workflow"", ""profile"": ""none"", ""rate_per_day"": ""none"", ""estimation_days"": 15.0}"
+c5b2f7d0-37db-44a8-b4f2-fd19eb2e24f1,A.Platform Team - Grid Error Alarm - Trigger allarm,"Sheet: Stimation
+Requirement: Alarms Module
+Team: A.Platform Team
+MacroActivity: Grid Error Alarm
+Activity: Trigger allarm
+Estimation (days): 2.0",Audit_Alarms_KnowledgeBase_merged.csv,Stimation,"{""source_file"": ""Audit_Alarms_KnowledgeBase_merged.csv"", ""sheet"": ""Stimation"", ""requirements"": ""Alarms Module"", ""value"": ""none"", ""team"": ""A.Platform Team"", ""macro_activity"": ""Grid Error Alarm"", ""activity"": ""Trigger allarm"", ""profile"": ""none"", ""rate_per_day"": ""none"", ""estimation_days"": 2.0}"
+5cb6e654-06f7-4f5b-b635-e38cce88d243,B.Flexibility Team - Data Upload - Definition,"Sheet: Stimation
+Requirement: Alarms Module
+Team: B.Flexibility Team
+MacroActivity: Data Upload
+Activity: Definition
+Estimation (days): 5.0",Audit_Alarms_KnowledgeBase_merged.csv,Stimation,"{""source_file"": ""Audit_Alarms_KnowledgeBase_merged.csv"", ""sheet"": ""Stimation"", ""requirements"": ""Alarms Module"", ""value"": ""none"", ""team"": ""B.Flexibility Team"", ""macro_activity"": ""Data Upload"", ""activity"": ""Definition"", ""profile"": ""none"", ""rate_per_day"": ""none"", ""estimation_days"": 5.0}"
+395c8980-3e6b-4f44-bd2b-78c7a535b88a,"B.Flexibility Team - Data Upload - estructure (type,trigger, notification, users…)","Sheet: Stimation
+Requirement: Alarms Module
+Team: B.Flexibility Team
+MacroActivity: Data Upload
+Activity: estructure (type,trigger, notification, users…)
+Estimation (days): 5.0",Audit_Alarms_KnowledgeBase_merged.csv,Stimation,"{""source_file"": ""Audit_Alarms_KnowledgeBase_merged.csv"", ""sheet"": ""Stimation"", ""requirements"": ""Alarms Module"", ""value"": ""none"", ""team"": ""B.Flexibility Team"", ""macro_activity"": ""Data Upload"", ""activity"": ""estructure (type,trigger, notification, users…)"", ""profile"": ""none"", ""rate_per_day"": ""none"", ""estimation_days"": 5.0}"
+c56e4b7e-6e88-47c7-96e0-4a1590b11c9e,B.Flexibility Team - Data Upload - Retrieve allarms,"Sheet: Stimation
+Requirement: Alarms Module
+Team: B.Flexibility Team
+MacroActivity: Data Upload
+Activity: Retrieve allarms
+Estimation (days): 3.0",Audit_Alarms_KnowledgeBase_merged.csv,Stimation,"{""source_file"": ""Audit_Alarms_KnowledgeBase_merged.csv"", ""sheet"": ""Stimation"", ""requirements"": ""Alarms Module"", ""value"": ""none"", ""team"": ""B.Flexibility Team"", ""macro_activity"": ""Data Upload"", ""activity"": ""Retrieve allarms"", ""profile"": ""none"", ""rate_per_day"": ""none"", ""estimation_days"": 3.0}"
+989759c2-632d-4a4f-b2ad-34ab4c362929,B.Flexibility Team - Data Upload - Include the alarms in the workflow,"Sheet: Stimation
+Requirement: Alarms Module
+Team: B.Flexibility Team
+MacroActivity: Data Upload
+Activity: Include the alarms in the workflow
+Estimation (days): 10.0",Audit_Alarms_KnowledgeBase_merged.csv,Stimation,"{""source_file"": ""Audit_Alarms_KnowledgeBase_merged.csv"", ""sheet"": ""Stimation"", ""requirements"": ""Alarms Module"", ""value"": ""none"", ""team"": ""B.Flexibility Team"", ""macro_activity"": ""Data Upload"", ""activity"": ""Include the alarms in the workflow"", ""profile"": ""none"", ""rate_per_day"": ""none"", ""estimation_days"": 10.0}"
+ebbfe5c5-888c-4806-bdde-d87bfe81bdcf,B.Flexibility Team - Data Upload - Trigger allarm,"Sheet: Stimation
+Requirement: Alarms Module
+Team: B.Flexibility Team
+MacroActivity: Data Upload
+Activity: Trigger allarm
+Estimation (days): 2.0",Audit_Alarms_KnowledgeBase_merged.csv,Stimation,"{""source_file"": ""Audit_Alarms_KnowledgeBase_merged.csv"", ""sheet"": ""Stimation"", ""requirements"": ""Alarms Module"", ""value"": ""none"", ""team"": ""B.Flexibility Team"", ""macro_activity"": ""Data Upload"", ""activity"": ""Trigger allarm"", ""profile"": ""none"", ""rate_per_day"": ""none"", ""estimation_days"": 2.0}"
+f79f3591-feb1-411a-a182-e142219522ba,B.Flexibility Team - Settlement Process - Definition,"Sheet: Stimation
+Requirement: Alarms Module
+Team: B.Flexibility Team
+MacroActivity: Settlement Process
+Activity: Definition
+Estimation (days): 5.0",Audit_Alarms_KnowledgeBase_merged.csv,Stimation,"{""source_file"": ""Audit_Alarms_KnowledgeBase_merged.csv"", ""sheet"": ""Stimation"", ""requirements"": ""Alarms Module"", ""value"": ""none"", ""team"": ""B.Flexibility Team"", ""macro_activity"": ""Settlement Process"", ""activity"": ""Definition"", ""profile"": ""none"", ""rate_per_day"": ""none"", ""estimation_days"": 5.0}"
+80a3b5b6-029f-43b6-a5e0-b560bf0dfd33,"B.Flexibility Team - Settlement Process - estructure (type,trigger, notification, users…)","Sheet: Stimation
+Requirement: Alarms Module
+Team: B.Flexibility Team
+MacroActivity: Settlement Process
+Activity: estructure (type,trigger, notification, users…)
+Estimation (days): 5.0",Audit_Alarms_KnowledgeBase_merged.csv,Stimation,"{""source_file"": ""Audit_Alarms_KnowledgeBase_merged.csv"", ""sheet"": ""Stimation"", ""requirements"": ""Alarms Module"", ""value"": ""none"", ""team"": ""B.Flexibility Team"", ""macro_activity"": ""Settlement Process"", ""activity"": ""estructure (type,trigger, notification, users…)"", ""profile"": ""none"", ""rate_per_day"": ""none"", ""estimation_days"": 5.0}"
+1be50b85-25de-48aa-a43c-80a8306fdf7d,B.Flexibility Team - Settlement Process - Retrieve allarms,"Sheet: Stimation
+Requirement: Alarms Module
+Team: B.Flexibility Team
+MacroActivity: Settlement Process
+Activity: Retrieve allarms
+Estimation (days): 3.0",Audit_Alarms_KnowledgeBase_merged.csv,Stimation,"{""source_file"": ""Audit_Alarms_KnowledgeBase_merged.csv"", ""sheet"": ""Stimation"", ""requirements"": ""Alarms Module"", ""value"": ""none"", ""team"": ""B.Flexibility Team"", ""macro_activity"": ""Settlement Process"", ""activity"": ""Retrieve allarms"", ""profile"": ""none"", ""rate_per_day"": ""none"", ""estimation_days"": 3.0}"
+c82f19ee-538f-47e6-a1a7-964ffa27066a,B.Flexibility Team - Settlement Process - Include the alarms in the workflow,"Sheet: Stimation
+Requirement: Alarms Module
+Team: B.Flexibility Team
+MacroActivity: Settlement Process
+Activity: Include the alarms in the workflow
+Estimation (days): 8.0",Audit_Alarms_KnowledgeBase_merged.csv,Stimation,"{""source_file"": ""Audit_Alarms_KnowledgeBase_merged.csv"", ""sheet"": ""Stimation"", ""requirements"": ""Alarms Module"", ""value"": ""none"", ""team"": ""B.Flexibility Team"", ""macro_activity"": ""Settlement Process"", ""activity"": ""Include the alarms in the workflow"", ""profile"": ""none"", ""rate_per_day"": ""none"", ""estimation_days"": 8.0}"
+91e4c715-949b-4e49-9365-14d53e4579cd,B.Flexibility Team - Settlement Process - Trigger allarm,"Sheet: Stimation
+Requirement: Alarms Module
+Team: B.Flexibility Team
+MacroActivity: Settlement Process
+Activity: Trigger allarm
+Estimation (days): 2.0",Audit_Alarms_KnowledgeBase_merged.csv,Stimation,"{""source_file"": ""Audit_Alarms_KnowledgeBase_merged.csv"", ""sheet"": ""Stimation"", ""requirements"": ""Alarms Module"", ""value"": ""none"", ""team"": ""B.Flexibility Team"", ""macro_activity"": ""Settlement Process"", ""activity"": ""Trigger allarm"", ""profile"": ""none"", ""rate_per_day"": ""none"", ""estimation_days"": 2.0}"
+0cce295b-d8ad-47cc-8eff-11f1e1f7fc4f,E.GENERAL - Definition - Information to Log,"Sheet: Stimation
+Requirement: Audit Modul
+Team: E.GENERAL
+MacroActivity: Definition
+Activity: Information to Log
+Estimation (days): 10.0",Audit_Alarms_KnowledgeBase_merged.csv,Stimation,"{""source_file"": ""Audit_Alarms_KnowledgeBase_merged.csv"", ""sheet"": ""Stimation"", ""requirements"": ""Audit Modul"", ""value"": ""none"", ""team"": ""E.GENERAL"", ""macro_activity"": ""Definition"", ""activity"": ""Information to Log"", ""profile"": ""none"", ""rate_per_day"": ""none"", ""estimation_days"": 10.0}"
+8ce6b441-0b9c-436a-8552-e019809ef53f,E.GENERAL - Definition - Techinical Document,"Sheet: Stimation
+Requirement: Audit Modul
+Team: E.GENERAL
+MacroActivity: Definition
+Activity: Techinical Document
+Estimation (days): 10.0",Audit_Alarms_KnowledgeBase_merged.csv,Stimation,"{""source_file"": ""Audit_Alarms_KnowledgeBase_merged.csv"", ""sheet"": ""Stimation"", ""requirements"": ""Audit Modul"", ""value"": ""none"", ""team"": ""E.GENERAL"", ""macro_activity"": ""Definition"", ""activity"": ""Techinical Document"", ""profile"": ""none"", ""rate_per_day"": ""none"", ""estimation_days"": 10.0}"
+87059d34-8cb6-4036-b206-1de174404b70,E.GENERAL - Training - Training,"Sheet: Stimation
+Requirement: Audit Modul
+Team: E.GENERAL
+MacroActivity: Training
+Activity: Training
+Estimation (days): 5.0",Audit_Alarms_KnowledgeBase_merged.csv,Stimation,"{""source_file"": ""Audit_Alarms_KnowledgeBase_merged.csv"", ""sheet"": ""Stimation"", ""requirements"": ""Audit Modul"", ""value"": ""none"", ""team"": ""E.GENERAL"", ""macro_activity"": ""Training"", ""activity"": ""Training"", ""profile"": ""none"", ""rate_per_day"": ""none"", ""estimation_days"": 5.0}"
+22beb971-d8b9-4dab-b8a8-b2cb9e2d25fc,E.GENERAL - Manual - Manual,"Sheet: Stimation
+Requirement: Audit Modul
+Team: E.GENERAL
+MacroActivity: Manual
+Activity: Manual
+Estimation (days): 5.0",Audit_Alarms_KnowledgeBase_merged.csv,Stimation,"{""source_file"": ""Audit_Alarms_KnowledgeBase_merged.csv"", ""sheet"": ""Stimation"", ""requirements"": ""Audit Modul"", ""value"": ""none"", ""team"": ""E.GENERAL"", ""macro_activity"": ""Manual"", ""activity"": ""Manual"", ""profile"": ""none"", ""rate_per_day"": ""none"", ""estimation_days"": 5.0}"
+cdcecca4-8914-4534-ac06-38f4dabeb22f,E.GENERAL - UAT - UAT,"Sheet: Stimation
+Requirement: Audit Modul
+Team: E.GENERAL
+MacroActivity: UAT
+Activity: UAT
+Estimation (days): 15.0",Audit_Alarms_KnowledgeBase_merged.csv,Stimation,"{""source_file"": ""Audit_Alarms_KnowledgeBase_merged.csv"", ""sheet"": ""Stimation"", ""requirements"": ""Audit Modul"", ""value"": ""none"", ""team"": ""E.GENERAL"", ""macro_activity"": ""UAT"", ""activity"": ""UAT"", ""profile"": ""none"", ""rate_per_day"": ""none"", ""estimation_days"": 15.0}"
+b741a51a-e436-4bf6-90f9-5f7c38d823fa,B.Flexibility Team - Flex Microservices - VPP,"Sheet: Stimation
+Requirement: Audit Modul
+Team: B.Flexibility Team
+MacroActivity: Flex Microservices
+Activity: VPP
+Estimation (days): 2.0",Audit_Alarms_KnowledgeBase_merged.csv,Stimation,"{""source_file"": ""Audit_Alarms_KnowledgeBase_merged.csv"", ""sheet"": ""Stimation"", ""requirements"": ""Audit Modul"", ""value"": ""none"", ""team"": ""B.Flexibility Team"", ""macro_activity"": ""Flex Microservices"", ""activity"": ""VPP"", ""profile"": ""none"", ""rate_per_day"": ""none"", ""estimation_days"": 2.0}"
+afc8a5ca-081e-4224-820e-c72ce4018659,B.Flexibility Team - Flex Microservices - Front,"Sheet: Stimation
+Requirement: Audit Modul
+Team: B.Flexibility Team
+MacroActivity: Flex Microservices
+Activity: Front
+Estimation (days): 2.0",Audit_Alarms_KnowledgeBase_merged.csv,Stimation,"{""source_file"": ""Audit_Alarms_KnowledgeBase_merged.csv"", ""sheet"": ""Stimation"", ""requirements"": ""Audit Modul"", ""value"": ""none"", ""team"": ""B.Flexibility Team"", ""macro_activity"": ""Flex Microservices"", ""activity"": ""Front"", ""profile"": ""none"", ""rate_per_day"": ""none"", ""estimation_days"": 2.0}"
+003e2fed-eacd-4535-be8a-661470ea518b,B.Flexibility Team - Flex Microservices - Broker,"Sheet: Stimation
+Requirement: Audit Modul
+Team: B.Flexibility Team
+MacroActivity: Flex Microservices
+Activity: Broker
+Estimation (days): 2.0",Audit_Alarms_KnowledgeBase_merged.csv,Stimation,"{""source_file"": ""Audit_Alarms_KnowledgeBase_merged.csv"", ""sheet"": ""Stimation"", ""requirements"": ""Audit Modul"", ""value"": ""none"", ""team"": ""B.Flexibility Team"", ""macro_activity"": ""Flex Microservices"", ""activity"": ""Broker"", ""profile"": ""none"", ""rate_per_day"": ""none"", ""estimation_days"": 2.0}"
+dff73bbf-7fa1-405a-a6c8-a01207db378b,B.Flexibility Team - Flex Microservices - Billing,"Sheet: Stimation
+Requirement: Audit Modul
+Team: B.Flexibility Team
+MacroActivity: Flex Microservices
+Activity: Billing
+Estimation (days): 2.0",Audit_Alarms_KnowledgeBase_merged.csv,Stimation,"{""source_file"": ""Audit_Alarms_KnowledgeBase_merged.csv"", ""sheet"": ""Stimation"", ""requirements"": ""Audit Modul"", ""value"": ""none"", ""team"": ""B.Flexibility Team"", ""macro_activity"": ""Flex Microservices"", ""activity"": ""Billing"", ""profile"": ""none"", ""rate_per_day"": ""none"", ""estimation_days"": 2.0}"
+40570cd3-bf32-4667-9f30-fc0b634c564d,B.Flexibility Team - Flex Microservices - Security,"Sheet: Stimation
+Requirement: Audit Modul
+Team: B.Flexibility Team
+MacroActivity: Flex Microservices
+Activity: Security
+Estimation (days): 2.0",Audit_Alarms_KnowledgeBase_merged.csv,Stimation,"{""source_file"": ""Audit_Alarms_KnowledgeBase_merged.csv"", ""sheet"": ""Stimation"", ""requirements"": ""Audit Modul"", ""value"": ""none"", ""team"": ""B.Flexibility Team"", ""macro_activity"": ""Flex Microservices"", ""activity"": ""Security"", ""profile"": ""none"", ""rate_per_day"": ""none"", ""estimation_days"": 2.0}"
+1b699fe3-88ca-4040-b21c-e9b9e0d5646e,B.Flexibility Team - Flex Microservices - EMS,"Sheet: Stimation
+Requirement: Audit Modul
+Team: B.Flexibility Team
+MacroActivity: Flex Microservices
+Activity: EMS
+Estimation (days): 2.0",Audit_Alarms_KnowledgeBase_merged.csv,Stimation,"{""source_file"": ""Audit_Alarms_KnowledgeBase_merged.csv"", ""sheet"": ""Stimation"", ""requirements"": ""Audit Modul"", ""value"": ""none"", ""team"": ""B.Flexibility Team"", ""macro_activity"": ""Flex Microservices"", ""activity"": ""EMS"", ""profile"": ""none"", ""rate_per_day"": ""none"", ""estimation_days"": 2.0}"
+6b200dc3-6120-49d0-884e-28fb9552a55e,B.Flexibility Team - Flex Microservices - Market,"Sheet: Stimation
+Requirement: Audit Modul
+Team: B.Flexibility Team
+MacroActivity: Flex Microservices
+Activity: Market
+Estimation (days): 2.0",Audit_Alarms_KnowledgeBase_merged.csv,Stimation,"{""source_file"": ""Audit_Alarms_KnowledgeBase_merged.csv"", ""sheet"": ""Stimation"", ""requirements"": ""Audit Modul"", ""value"": ""none"", ""team"": ""B.Flexibility Team"", ""macro_activity"": ""Flex Microservices"", ""activity"": ""Market"", ""profile"": ""none"", ""rate_per_day"": ""none"", ""estimation_days"": 2.0}"
+eb2f7aed-62a7-47cc-86d9-22563d71829d,B.Flexibility Team - Flex Microservices - Comms,"Sheet: Stimation
+Requirement: Audit Modul
+Team: B.Flexibility Team
+MacroActivity: Flex Microservices
+Activity: Comms
+Estimation (days): 2.0",Audit_Alarms_KnowledgeBase_merged.csv,Stimation,"{""source_file"": ""Audit_Alarms_KnowledgeBase_merged.csv"", ""sheet"": ""Stimation"", ""requirements"": ""Audit Modul"", ""value"": ""none"", ""team"": ""B.Flexibility Team"", ""macro_activity"": ""Flex Microservices"", ""activity"": ""Comms"", ""profile"": ""none"", ""rate_per_day"": ""none"", ""estimation_days"": 2.0}"
+5cdfd0e9-329f-4949-8a8c-8d32d3fd029f,B.Flexibility Team - Flex Microservices - Comms,"Sheet: Stimation
+Requirement: Audit Modul
+Team: B.Flexibility Team
+MacroActivity: Flex Microservices
+Activity: Comms
+Estimation (days): 2.0",Audit_Alarms_KnowledgeBase_merged.csv,Stimation,"{""source_file"": ""Audit_Alarms_KnowledgeBase_merged.csv"", ""sheet"": ""Stimation"", ""requirements"": ""Audit Modul"", ""value"": ""none"", ""team"": ""B.Flexibility Team"", ""macro_activity"": ""Flex Microservices"", ""activity"": ""Comms"", ""profile"": ""none"", ""rate_per_day"": ""none"", ""estimation_days"": 2.0}"
+fe8d462b-0c81-404f-a8ab-76e414880f52,B.Flexibility Team - Flex Microservices - Comms,"Sheet: Stimation
+Requirement: Audit Modul
+Team: B.Flexibility Team
+MacroActivity: Flex Microservices
+Activity: Comms
+Estimation (days): 2.0",Audit_Alarms_KnowledgeBase_merged.csv,Stimation,"{""source_file"": ""Audit_Alarms_KnowledgeBase_merged.csv"", ""sheet"": ""Stimation"", ""requirements"": ""Audit Modul"", ""value"": ""none"", ""team"": ""B.Flexibility Team"", ""macro_activity"": ""Flex Microservices"", ""activity"": ""Comms"", ""profile"": ""none"", ""rate_per_day"": ""none"", ""estimation_days"": 2.0}"
+902b02f0-d8b2-499a-ab7e-57cbbf850d41,A.Platform Team - Platform - Extractor vs Platform,"Sheet: Stimation
+Requirement: Audit Modul
+Team: A.Platform Team
+MacroActivity: Platform
+Activity: Extractor vs Platform
+Estimation (days): 4.0",Audit_Alarms_KnowledgeBase_merged.csv,Stimation,"{""source_file"": ""Audit_Alarms_KnowledgeBase_merged.csv"", ""sheet"": ""Stimation"", ""requirements"": ""Audit Modul"", ""value"": ""none"", ""team"": ""A.Platform Team"", ""macro_activity"": ""Platform"", ""activity"": ""Extractor vs Platform"", ""profile"": ""none"", ""rate_per_day"": ""none"", ""estimation_days"": 4.0}"
+5142be30-a429-4efe-9c52-1fb2f6194a7d,A.Platform Team - Platform - Extractor vs Flex,"Sheet: Stimation
+Requirement: Audit Modul
+Team: A.Platform Team
+MacroActivity: Platform
+Activity: Extractor vs Flex
+Estimation (days): 4.0",Audit_Alarms_KnowledgeBase_merged.csv,Stimation,"{""source_file"": ""Audit_Alarms_KnowledgeBase_merged.csv"", ""sheet"": ""Stimation"", ""requirements"": ""Audit Modul"", ""value"": ""none"", ""team"": ""A.Platform Team"", ""macro_activity"": ""Platform"", ""activity"": ""Extractor vs Flex"", ""profile"": ""none"", ""rate_per_day"": ""none"", ""estimation_days"": 4.0}"
+e4c927a9-69c0-4ac8-ae0c-4790129bc23c,C.Calculation Engine - Calculation engine microservices Edge - Comms,"Sheet: Stimation
+Requirement: Audit Modul
+Team: C.Calculation Engine
+MacroActivity: Calculation engine microservices Edge
+Activity: Comms
+Estimation (days): 2.0",Audit_Alarms_KnowledgeBase_merged.csv,Stimation,"{""source_file"": ""Audit_Alarms_KnowledgeBase_merged.csv"", ""sheet"": ""Stimation"", ""requirements"": ""Audit Modul"", ""value"": ""none"", ""team"": ""C.Calculation Engine"", ""macro_activity"": ""Calculation engine microservices Edge"", ""activity"": ""Comms"", ""profile"": ""none"", ""rate_per_day"": ""none"", ""estimation_days"": 2.0}"
+100a8528-a7fa-49c1-845d-8050a79d6218,C.Calculation Engine - Calculation engine microservices TL - Comms,"Sheet: Stimation
+Requirement: Audit Modul
+Team: C.Calculation Engine
+MacroActivity: Calculation engine microservices TL
+Activity: Comms
+Estimation (days): 2.0",Audit_Alarms_KnowledgeBase_merged.csv,Stimation,"{""source_file"": ""Audit_Alarms_KnowledgeBase_merged.csv"", ""sheet"": ""Stimation"", ""requirements"": ""Audit Modul"", ""value"": ""none"", ""team"": ""C.Calculation Engine"", ""macro_activity"": ""Calculation engine microservices TL"", ""activity"": ""Comms"", ""profile"": ""none"", ""rate_per_day"": ""none"", ""estimation_days"": 2.0}"
+6e7d9e56-0006-408e-9f6a-9709e06e343b,C.Calculation Engine - Calculation engine microservices Col - Comms,"Sheet: Stimation
+Requirement: Audit Modul
+Team: C.Calculation Engine
+MacroActivity: Calculation engine microservices Col
+Activity: Comms
+Estimation (days): 2.0",Audit_Alarms_KnowledgeBase_merged.csv,Stimation,"{""source_file"": ""Audit_Alarms_KnowledgeBase_merged.csv"", ""sheet"": ""Stimation"", ""requirements"": ""Audit Modul"", ""value"": ""none"", ""team"": ""C.Calculation Engine"", ""macro_activity"": ""Calculation engine microservices Col"", ""activity"": ""Comms"", ""profile"": ""none"", ""rate_per_day"": ""none"", ""estimation_days"": 2.0}"
+93b4cd75-40a5-407b-9497-ae6d0c5764cc,A.Platform Team - ElasticSearch - Install,"Sheet: Stimation
+Requirement: Audit Modul
+Team: A.Platform Team
+MacroActivity: ElasticSearch
+Activity: Install
+Estimation (days): 2.0",Audit_Alarms_KnowledgeBase_merged.csv,Stimation,"{""source_file"": ""Audit_Alarms_KnowledgeBase_merged.csv"", ""sheet"": ""Stimation"", ""requirements"": ""Audit Modul"", ""value"": ""none"", ""team"": ""A.Platform Team"", ""macro_activity"": ""ElasticSearch"", ""activity"": ""Install"", ""profile"": ""none"", ""rate_per_day"": ""none"", ""estimation_days"": 2.0}"
+3b2ab730-4a29-46a3-a0bc-afdc8288649f,A.Platform Team - ElasticSearch - Security,"Sheet: Stimation
+Requirement: Audit Modul
+Team: A.Platform Team
+MacroActivity: ElasticSearch
+Activity: Security
+Estimation (days): 2.0",Audit_Alarms_KnowledgeBase_merged.csv,Stimation,"{""source_file"": ""Audit_Alarms_KnowledgeBase_merged.csv"", ""sheet"": ""Stimation"", ""requirements"": ""Audit Modul"", ""value"": ""none"", ""team"": ""A.Platform Team"", ""macro_activity"": ""ElasticSearch"", ""activity"": ""Security"", ""profile"": ""none"", ""rate_per_day"": ""none"", ""estimation_days"": 2.0}"
+b0faabe4-d93a-4867-9185-8822484bdc79,A.Platform Team - ElasticSearch - Indexes,"Sheet: Stimation
+Requirement: Audit Modul
+Team: A.Platform Team
+MacroActivity: ElasticSearch
+Activity: Indexes
+Estimation (days): 2.0",Audit_Alarms_KnowledgeBase_merged.csv,Stimation,"{""source_file"": ""Audit_Alarms_KnowledgeBase_merged.csv"", ""sheet"": ""Stimation"", ""requirements"": ""Audit Modul"", ""value"": ""none"", ""team"": ""A.Platform Team"", ""macro_activity"": ""ElasticSearch"", ""activity"": ""Indexes"", ""profile"": ""none"", ""rate_per_day"": ""none"", ""estimation_days"": 2.0}"
+0479ddcd-95ef-4cff-938b-78c8025ec608,A.Platform Team - Kibana - Install,"Sheet: Stimation
+Requirement: Audit Modul
+Team: A.Platform Team
+MacroActivity: Kibana
+Activity: Install
+Estimation (days): 2.0",Audit_Alarms_KnowledgeBase_merged.csv,Stimation,"{""source_file"": ""Audit_Alarms_KnowledgeBase_merged.csv"", ""sheet"": ""Stimation"", ""requirements"": ""Audit Modul"", ""value"": ""none"", ""team"": ""A.Platform Team"", ""macro_activity"": ""Kibana"", ""activity"": ""Install"", ""profile"": ""none"", ""rate_per_day"": ""none"", ""estimation_days"": 2.0}"
+9f18ec63-9439-46f7-a11b-87c67bd84c21,A.Platform Team - Kibana - Security,"Sheet: Stimation
+Requirement: Audit Modul
+Team: A.Platform Team
+MacroActivity: Kibana
+Activity: Security
+Estimation (days): 2.0",Audit_Alarms_KnowledgeBase_merged.csv,Stimation,"{""source_file"": ""Audit_Alarms_KnowledgeBase_merged.csv"", ""sheet"": ""Stimation"", ""requirements"": ""Audit Modul"", ""value"": ""none"", ""team"": ""A.Platform Team"", ""macro_activity"": ""Kibana"", ""activity"": ""Security"", ""profile"": ""none"", ""rate_per_day"": ""none"", ""estimation_days"": 2.0}"
+6963531f-e584-46c9-b3dc-ae692c11a64e,A.Platform Team - Kibana - Alerts,"Sheet: Stimation
+Requirement: Audit Modul
+Team: A.Platform Team
+MacroActivity: Kibana
+Activity: Alerts
+Estimation (days): 2.0",Audit_Alarms_KnowledgeBase_merged.csv,Stimation,"{""source_file"": ""Audit_Alarms_KnowledgeBase_merged.csv"", ""sheet"": ""Stimation"", ""requirements"": ""Audit Modul"", ""value"": ""none"", ""team"": ""A.Platform Team"", ""macro_activity"": ""Kibana"", ""activity"": ""Alerts"", ""profile"": ""none"", ""rate_per_day"": ""none"", ""estimation_days"": 2.0}"
+c1faf03a-2597-47f1-bb56-f2ff8198b5ce,A.Platform Team - Kibana - Definition,"Sheet: Stimation
+Requirement: Audit Modul
+Team: A.Platform Team
+MacroActivity: Kibana
+Activity: Definition
+Estimation (days): 5.0",Audit_Alarms_KnowledgeBase_merged.csv,Stimation,"{""source_file"": ""Audit_Alarms_KnowledgeBase_merged.csv"", ""sheet"": ""Stimation"", ""requirements"": ""Audit Modul"", ""value"": ""none"", ""team"": ""A.Platform Team"", ""macro_activity"": ""Kibana"", ""activity"": ""Definition"", ""profile"": ""none"", ""rate_per_day"": ""none"", ""estimation_days"": 5.0}"
+a49c7cbe-9c9c-4c9c-a96f-1d2eb6db00ed,A.Platform Team - Kibana - Dashboards,"Sheet: Stimation
+Requirement: Audit Modul
+Team: A.Platform Team
+MacroActivity: Kibana
+Activity: Dashboards
+Estimation (days): 8.0",Audit_Alarms_KnowledgeBase_merged.csv,Stimation,"{""source_file"": ""Audit_Alarms_KnowledgeBase_merged.csv"", ""sheet"": ""Stimation"", ""requirements"": ""Audit Modul"", ""value"": ""none"", ""team"": ""A.Platform Team"", ""macro_activity"": ""Kibana"", ""activity"": ""Dashboards"", ""profile"": ""none"", ""rate_per_day"": ""none"", ""estimation_days"": 8.0}"
+a8b49c7d-5775-431a-bb35-87d4f9b66dcd,C.Calculation Team - System Architect,"Sheet: Team Composition
+Team: C.Calculation Team
+Profile: System Architect
+Rate per day: 389",Audit_Alarms_KnowledgeBase_merged.csv,Team Composition,"{""source_file"": ""Audit_Alarms_KnowledgeBase_merged.csv"", ""sheet"": ""Team Composition"", ""requirements"": ""none"", ""value"": ""none"", ""team"": ""C.Calculation Team"", ""macro_activity"": ""none"", ""activity"": ""none"", ""profile"": ""System Architect"", ""rate_per_day"": ""389"", ""estimation_days"": NaN}"
+6bddd713-6eef-49da-99dc-86af5825d860,C.Calculation Team - Product team,"Sheet: Team Composition
+Team: C.Calculation Team
+Profile: Product team
+Rate per day: 389",Audit_Alarms_KnowledgeBase_merged.csv,Team Composition,"{""source_file"": ""Audit_Alarms_KnowledgeBase_merged.csv"", ""sheet"": ""Team Composition"", ""requirements"": ""none"", ""value"": ""none"", ""team"": ""C.Calculation Team"", ""macro_activity"": ""none"", ""activity"": ""none"", ""profile"": ""Product team"", ""rate_per_day"": ""389"", ""estimation_days"": NaN}"
+3be98791-763f-4e38-be71-eb9b255eae3c,E.GENERAL - Product team,"Sheet: Team Composition
+Team: E.GENERAL
+Profile: Product team
+Rate per day: 389",Audit_Alarms_KnowledgeBase_merged.csv,Team Composition,"{""source_file"": ""Audit_Alarms_KnowledgeBase_merged.csv"", ""sheet"": ""Team Composition"", ""requirements"": ""none"", ""value"": ""none"", ""team"": ""E.GENERAL"", ""macro_activity"": ""none"", ""activity"": ""none"", ""profile"": ""Product team"", ""rate_per_day"": ""389"", ""estimation_days"": NaN}"
+717346ab-a603-444a-af08-ff1991ba7b53,A.Platform Team - Product team,"Sheet: Team Composition
+Team: A.Platform Team
+Profile: Product team
+Rate per day: 422",Audit_Alarms_KnowledgeBase_merged.csv,Team Composition,"{""source_file"": ""Audit_Alarms_KnowledgeBase_merged.csv"", ""sheet"": ""Team Composition"", ""requirements"": ""none"", ""value"": ""none"", ""team"": ""A.Platform Team"", ""macro_activity"": ""none"", ""activity"": ""none"", ""profile"": ""Product team"", ""rate_per_day"": ""422"", ""estimation_days"": NaN}"
+aee0da8b-ade3-4f01-b0e1-2975d115af47,B.Flexibility Team - System Architect,"Sheet: Team Composition
+Team: B.Flexibility Team
+Profile: System Architect
+Rate per day: 389",Audit_Alarms_KnowledgeBase_merged.csv,Team Composition,"{""source_file"": ""Audit_Alarms_KnowledgeBase_merged.csv"", ""sheet"": ""Team Composition"", ""requirements"": ""none"", ""value"": ""none"", ""team"": ""B.Flexibility Team"", ""macro_activity"": ""none"", ""activity"": ""none"", ""profile"": ""System Architect"", ""rate_per_day"": ""389"", ""estimation_days"": NaN}"
+0b437602-0358-476b-b124-3411c01d329f,A.Platform Team - Data Engineer,"Sheet: Team Composition
+Team: A.Platform Team
+Profile: Data Engineer
+Rate per day: 422",Audit_Alarms_KnowledgeBase_merged.csv,Team Composition,"{""source_file"": ""Audit_Alarms_KnowledgeBase_merged.csv"", ""sheet"": ""Team Composition"", ""requirements"": ""none"", ""value"": ""none"", ""team"": ""A.Platform Team"", ""macro_activity"": ""none"", ""activity"": ""none"", ""profile"": ""Data Engineer"", ""rate_per_day"": ""422"", ""estimation_days"": NaN}"
+6616159c-1dc3-47ca-b8b9-76822933e404,D.Front Team - Product team,"Sheet: Team Composition
+Team: D.Front Team
+Profile: Product team
+Rate per day: 389",Audit_Alarms_KnowledgeBase_merged.csv,Team Composition,"{""source_file"": ""Audit_Alarms_KnowledgeBase_merged.csv"", ""sheet"": ""Team Composition"", ""requirements"": ""none"", ""value"": ""none"", ""team"": ""D.Front Team"", ""macro_activity"": ""none"", ""activity"": ""none"", ""profile"": ""Product team"", ""rate_per_day"": ""389"", ""estimation_days"": NaN}"

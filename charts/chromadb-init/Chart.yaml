@@ -1,0 +1,19 @@
+apiVersion: v2
+name: chromadb-init
+description: Helm chart to run a one-off Kubernetes Job that initializes a ChromaDB persistent collection using OpenAI embeddings and stores data on a PVC.
+type: application
+version: 0.1.0
+appVersion: "0.1.0"
+kubeVersion: ">=1.23.0-0"
+keywords:
+  - chroma
+  - chromadb
+  - embeddings
+  - vector
+  - job
+home: https://example.com/chromadb-init
+sources:
+  - https://github.com/example/chromadb-init
+maintainers:
+  - name: mlcourse
+    email: example@example.com

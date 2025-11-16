@@ -1,0 +1,17 @@
+{{- if .Values.persistentVolume.enabled }}
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: {{ .Values.persistentVolume.name }}
+  labels:
+    type: local # A common label for hostPath PVs
+spec:
+  capacity:
+    storage: {{ .Values.persistentVolume.capacity }}
+  accessModes:
+    - {{ .Values.persistentVolume.accessMode }}
+  storageClassName: {{ .Values.persistentVolume.storageClass }}
+  # HostPath configuration for demonstration purposes
+  hostPath:
+    path: {{ .Values.persistentVolume.hostPath.path }}
+{{- end }}

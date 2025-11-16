@@ -1,0 +1,73 @@
+image:
+  repository: your-docker-repo/chromadb-init
+  tag: "0.1.0"
+  pullPolicy: IfNotPresent
+
+chromadb:
+  collectionName: "derms_kb"
+  dbPath: "/mnt/data/vectordb"
+  modelName: "text-embedding-3-small"
+  batchSize: 128
+
+csv:
+  path: "/app/archive/estimate.csv" # Used if csv.url is empty
+  encoding: "ISO-8859-1"
+  failOnMissingColumns: false
+
+persistentVolume:
+  enabled: true
+  name: task-pv-volume
+  namespace: openai
+  capacity: 20Gi
+  accessMode: ReadWriteOnce
+  storageClass: local-storage # <-- Updated to match the SC name
+  # WARNING: hostPath is for development/testing only.
+  hostPath:
+    path: "/mnt/data"
+    
+storageClass:
+  enabled: true
+  # The name used by the StorageClass, PV, and PVC
+  name: local-storage
+  namespace: openai 
+  # For local/hostPath PVs, use kubernetes.io/no-provisioner
+  provisioner: kubernetes.io/no-provisioner
+  reclaimPolicy: Retain # Retain or Delete. Keep Retain for hostPath/manual PVs to prevent data loss.
+  volumeBindingMode: WaitForFirstConsumer
+
+pvc:
+  create: true
+  name: "chromadb-vectordb"
+  namespace: openai
+  existingClaim: "" # If set, use this existing PVC and ignore creation
+  mountPath: "/data"
+  storageClassName: "local-storage" # Defaults to cluster default if empty
+  accessModes:
+    - ReadWriteOnce
+  size: "10Gi"
+
+secret:
+  create: true
+  name: "chromadb-openai"
+  # Provide securely at install time, e.g.:
+  # --set-file secret.openaiApiKey=/path/to/key.txt
+  openaiApiKey: "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"
+
+job:
+  backoffLimit: 1
+  ttlSecondsAfterFinished: 86400
+  annotations: {}
+  labels: {}
+  restartPolicy: Never
+
+resources: {}
+nodeSelector: {}
+tolerations: []
+affinity: {}
+podAnnotations: {}
+podLabels: {}
+serviceAccountName: ""
+imagePullSecrets: [] # e.g., [{ name: regcred }]
+
+podSecurityContext: {}
+securityContext: {}

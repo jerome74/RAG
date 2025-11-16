@@ -1,0 +1,287 @@
+#!/usr/bin/env python3
+"""
+Initialize a ChromaDB persistent collection from a CSV, using OpenAI embeddings.
+
+Configuration via environment variables:
+  REQUIRED
+    - OPENAI_API_KEY: OpenAI API key to create embeddings.
+
+  OPTIONAL
+    - COLLECTION_NAME: Target ChromaDB collection name (default: "derms_kb")
+    - DB_PATH: Persistent directory for ChromaDB (default: "/data/vectordb")
+    - MODEL_NAME: OpenAI embedding model (default: "text-embedding-3-small")
+    - BATCH_SIZE: Embedding batch size (default: "128")
+    - CSV_URL: If set, the CSV will be downloaded from this URL into /tmp/input.csv
+    - CSV_PATH: Local path to the CSV (default: "/work/knowledgebase_for_chromadb.csv")
+    - CSV_ENCODING: CSV file encoding (default: "ISO-8859-1")
+    - CSV_DELIMITER: CSV delimiter (default: ",")
+    - FAIL_ON_MISSING_COLUMNS: "true" to fail if expected columns are missing (default: "false")
+
+Expected CSV columns (minimum):
+  - "document": text content to embed
+Optional columns if present:
+  - "id": stable identifier per row; if missing, IDs will be generated
+  - "metadata_json": JSON object per row with arbitrary metadata
+  - "title", "category", "source": will be added to metadata if present
+"""
+
+import os
+import sys
+import json
+import logging
+from pathlib import Path
+from typing import List, Dict, Any, Optional
+
+import pandas as pd
+import chromadb
+from chromadb.utils import embedding_functions
+
+try:
+    import requests
+except Exception:
+    requests = None
+
+
+def env(name: str, default: Optional[str] = None) -> Optional[str]:
+    return os.environ.get(name, default)
+
+
+def setup_logging() -> None:
+    level = logging.INFO
+    logging.basicConfig(
+        level=level,
+        format="%(asctime)s %(levelname)s %(message)s",
+    )
+
+
+def download_csv(csv_url: str, dest_path: Path) -> Path:
+    if requests is None:
+        raise RuntimeError("requests package not available to download CSV. Provide CSV_PATH instead of CSV_URL, or ensure 'requests' is installed.")
+    logging.info(f"Downloading CSV from URL: {csv_url}")
+    dest_path.parent.mkdir(parents=True, exist_ok=True)
+    with requests.get(csv_url, stream=True, timeout=300) as r:
+        r.raise_for_status()
+        with open(dest_path, "wb") as f:
+            for chunk in r.iter_content(chunk_size=1_048_576):
+                if chunk:
+                    f.write(chunk)
+    logging.info(f"CSV downloaded to: {dest_path}")
+    return dest_path
+
+
+def load_dataframe(csv_path: Path, encoding: str, delimiter: str) -> pd.DataFrame:
+    logging.info(f"Loading CSV: {csv_path}")
+    if not csv_path.exists():
+        raise FileNotFoundError(f"CSV file not found at {csv_path}")
+    try:
+        df = pd.read_csv(csv_path, encoding=encoding, sep=delimiter)
+    except UnicodeDecodeError:
+        logging.warning("Failed to decode with provided encoding. Retrying with utf-8.")
+        df = pd.read_csv(csv_path, encoding="utf-8", sep=delimiter)
+    logging.info(f"Loaded {len(df)} rows.")
+    return df
+
+
+def ensure_columns(
+    df: pd.DataFrame,
+    fail_on_missing: bool,
+) -> None:
+    required = ["document"]
+    missing = [c for c in required if c not in df.columns]
+    if missing:
+        msg = f"Missing required columns in CSV: {missing}"
+        if fail_on_missing:
+            raise ValueError(msg)
+        logging.warning(msg + " — proceeding may fail later.")
+    # Optional columns are handled opportunistically.
+
+
+def parse_metadata_for_row(row: pd.Series) -> Dict[str, Any]:
+    meta: Dict[str, Any] = {}
+    # metadata_json
+    if "metadata_json" in row and pd.notna(row["metadata_json"]):
+        try:
+            maybe = row["metadata_json"]
+            if isinstance(maybe, dict):
+                meta.update(maybe)
+            else:
+                meta.update(json.loads(str(maybe)))
+        except Exception as e:
+            logging.warning(f"Failed to parse metadata_json for row: {e}")
+    # enrich with common fields if present
+    for key in ["title", "category", "source"]:
+        if key in row and pd.notna(row[key]):
+            meta[key] = str(row[key])
+    return meta
+
+
+def build_rows(
+    df: pd.DataFrame,
+) -> Dict[str, List[Any]]:
+    docs: List[str] = []
+    ids: List[str] = []
+    metadatas: List[Dict[str, Any]] = []
+
+    has_id = "id" in df.columns
+    used_ids = set()
+
+    for idx, row in df.iterrows():
+        # document
+        doc = None
+        if "document" in row and pd.notna(row["document"]):
+            doc = str(row["document"])
+        elif "text" in row and pd.notna(row["text"]):
+            doc = str(row["text"])
+        if not doc:
+            # Skip empty document rows
+            continue
+        docs.append(doc)
+
+        # id
+        if has_id and pd.notna(row["id"]):
+            rid = str(row["id"])
+        elif "index" in row and pd.notna(row["index"]):
+            rid = f"id{row['index']}"
+        else:
+            rid = f"row-{idx}"
+        # Ensure uniqueness
+        if rid in used_ids:
+            rid = f"{rid}-{idx}"
+        used_ids.add(rid)
+        ids.append(rid)
+
+        # metadata
+        metadatas.append(parse_metadata_for_row(row))
+
+    if not docs:
+        raise ValueError("No valid 'document' rows found in CSV.")
+
+    logging.info(f"Assembled rows: {len(docs)} documents, {len(ids)} ids, {len(metadatas)} metadatas")
+    return {"docs": docs, "ids": ids, "metadatas": metadatas}
+
+
+def embed_in_batches(
+    texts: List[str],
+    ef: embedding_functions.OpenAIEmbeddingFunction,
+    batch_size: int,
+) -> List[List[float]]:
+    all_vectors: List[List[float]] = []
+    n = len(texts)
+    logging.info(f"Creating embeddings for {n} texts in batches of {batch_size}...")
+    for i in range(0, n, batch_size):
+        batch = texts[i : i + batch_size]
+        logging.info(f"Embedding batch {i}-{min(i+batch_size-1, n-1)}")
+        vectors = ef(batch)
+        # ef returns List[List[float]]
+        if not isinstance(vectors, list) or (vectors and not isinstance(vectors[0], list)):
+            raise RuntimeError("Unexpected embedding function return type")
+        all_vectors.extend(vectors)
+    if len(all_vectors) != n:
+        raise RuntimeError(f"Embedding count mismatch. Expected {n}, got {len(all_vectors)}")
+    return all_vectors
+
+
+def run() -> int:
+    setup_logging()
+
+    openai_api_key = env("OPENAI_API_KEY")
+    if not openai_api_key:
+        logging.error("OPENAI_API_KEY is required but not set.")
+        return 2
+
+    collection_name = env("COLLECTION_NAME", "derms_kb")
+    db_path = Path(env("DB_PATH", "/data/vectordb"))
+    model_name = env("MODEL_NAME", "text-embedding-3-small")
+    batch_size_str = env("BATCH_SIZE", "128")
+    try:
+        batch_size = max(1, int(batch_size_str))
+    except Exception:
+        batch_size = 128
+
+    csv_url = env("CSV_URL")
+    csv_path_str = env("CSV_PATH", "/work/knowledgebase_for_chromadb.csv")
+    csv_encoding = env("CSV_ENCODING", "ISO-8859-1")
+    csv_delimiter = env("CSV_DELIMITER", ",")
+    fail_on_missing_columns = env("FAIL_ON_MISSING_COLUMNS", "false").lower() == "true"
+
+    # Resolve CSV: download or local
+    input_csv_path: Path
+    if csv_url:
+        input_csv_path = Path("/tmp/input.csv")
+        try:
+            download_csv(csv_url, input_csv_path)
+        except Exception as e:
+            logging.error(f"Failed to download CSV from URL: {e}")
+            return 3
+    else:
+        input_csv_path = Path(csv_path_str)
+
+    # Load CSV
+    try:
+        df = load_dataframe(input_csv_path, encoding=csv_encoding, delimiter=csv_delimiter)
+    except Exception as e:
+        logging.error(f"Failed to load CSV: {e}")
+        return 4
+
+    # Validate columns
+    try:
+        ensure_columns(df, fail_on_missing=fail_on_missing_columns)
+    except Exception as e:
+        logging.error(str(e))
+        return 5
+
+    # Build rows
+    try:
+        rows = build_rows(df)
+    except Exception as e:
+        logging.error(f"Failed to build rows from CSV: {e}")
+        return 6
+
+    # Prepare Chroma client and collection
+    try:
+        db_path.mkdir(parents=True, exist_ok=True)
+        client = chromadb.PersistentClient(path=str(db_path))
+        collection = client.get_or_create_collection(name=collection_name)
+        logging.info(f"Using ChromaDB collection='{collection_name}' at path='{db_path}'")
+    except Exception as e:
+        logging.error(f"Failed to initialize ChromaDB: {e}")
+        return 7
+
+    # Prepare embedding function
+    try:
+        openai_ef = embedding_functions.OpenAIEmbeddingFunction(
+            api_key=openai_api_key,
+            model_name=model_name,
+        )
+    except Exception as e:
+        logging.error(f"Failed to initialize OpenAIEmbeddingFunction: {e}")
+        return 8
+
+    # Create embeddings
+    try:
+        vectors = embed_in_batches(rows["docs"], openai_ef, batch_size=batch_size)
+    except Exception as e:
+        logging.error(f"Failed to create embeddings: {e}")
+        return 9
+
+    # Insert into collection
+    try:
+        logging.info("Adding documents to ChromaDB collection...")
+        collection.add(
+            documents=rows["docs"],
+            metadatas=rows["metadatas"],
+            ids=rows["ids"],
+            embeddings=vectors,
+        )
+        total = collection.count()
+        logging.info(f"Ingestion completed. Collection count: {total}")
+    except Exception as e:
+        logging.error(f"Failed to add documents to collection: {e}")
+        return 10
+
+    return 0
+
+
+if __name__ == "__main__":
+    rc = run()
+    sys.exit(rc)
