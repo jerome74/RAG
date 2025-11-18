@@ -1,7 +1,7 @@
 image:
-  repository: chromadb-init
+  repository: "localhost:5000/chromadb-init"
   tag: "0.1.0"
-  pullPolicy: Never
+  pullPolicy: IfNotPresent
 
 chromadb:
   collectionName: "derms_kb"
