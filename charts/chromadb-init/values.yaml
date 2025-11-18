@@ -1,5 +1,5 @@
-root:
-  namespace: "rag"
+namespace:
+  name: "rag"
 
 image:
   repository: "localhost:5000/chromadb-init"
