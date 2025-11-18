@@ -1,3 +1,6 @@
+root:
+  namespace: "rag"
+
 image:
   repository: "localhost:5000/chromadb-init"
   tag: "0.1.0"
