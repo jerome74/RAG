@@ -2,9 +2,9 @@ namespace:
   name: "rag"
 
 image:
-  repository: "localhost:5000/chromadb-init"
+  repository: "wlongo74/chromadb-init"
   tag: "0.1.0"
-  pullPolicy: IfNotPresent
+  pullPolicy: Never
 
 chromadb:
   collectionName: "derms_kb"
@@ -54,7 +54,8 @@ cypher:
   name: "chromadb-openai"
   # Provide securely at install time, e.g.:
   # --set-file cypher.openaiApiKey=/path/to/key.txt
-  openaiApiCypher: "OPENAI_API_CYPHER"
+  openaiApiCypher: "VALUE"
+  exaApiCypher: "VALUE"
 
 job:
   backoffLimit: 1

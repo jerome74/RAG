@@ -45,14 +45,19 @@ spec:
       restartPolicy: {{ .Values.job.restartPolicy }}
       containers:
         - name: chromadb-init
-          image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
+          image: {{ .Values.image.repository }}:{{ .Values.image.tag }}
           imagePullPolicy: {{ .Values.image.pullPolicy }}
           env:
-            - name: OPENAI_API_KEY
+            - name: OPENAI_API_CYPHER
               valueFrom:
                 secretKeyRef:
                   name: {{ default (printf "%s-openai" .Release.Name) .Values.cypher.name }}
                   key: OPENAI_API_KEY
+            - name: EXA_KEY
+              valueFrom:
+                secretKeyRef:
+                  name: {{ default (printf "%s-openai" .Release.Name) .Values.cypher.name }}
+                  key: EXA_API_KEY
             - name: COLLECTION_NAME
               value: {{ .Values.chromadb.collectionName | quote }}
             - name: DB_PATH
