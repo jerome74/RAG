@@ -4,7 +4,7 @@ namespace:
 image:
   repository: "wlongo74/chromadb-init"
   tag: "0.1.0"
-  pullPolicy: Never
+  pullPolicy: IfNotPresent
 
 chromadb:
   collectionName: "derms_kb"
