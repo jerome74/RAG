@@ -8,7 +8,7 @@ image:
 
 chromadb:
   collectionName: "derms_kb"
-  dbPath: "/mnt/data/vectordb"
+  dbPath: "/tmp/data/vectordb"
   modelName: "text-embedding-3-small"
   batchSize: 128
 
