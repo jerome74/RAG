@@ -26,7 +26,7 @@ persistentVolume:
   storageClass: local-storage # <-- Updated to match the SC name
   # WARNING: hostPath is for development/testing only.
   hostPath:
-    path: "/mnt/data"
+    path: "/tmp"
     
 storageClass:
   enabled: true
