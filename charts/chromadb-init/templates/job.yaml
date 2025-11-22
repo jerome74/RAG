@@ -48,7 +48,7 @@ spec:
           image: {{ .Values.image.repository }}:{{ .Values.image.tag }}
           imagePullPolicy: {{ .Values.image.pullPolicy }}
           env:
-            - name: OPENAI_API_CYPHER
+            - name: OPENAI_API_KEY
               valueFrom:
                 secretKeyRef:
                   name: {{ default (printf "%s-openai" .Release.Name) .Values.cypher.name }}
@@ -70,6 +70,8 @@ spec:
               value: {{ .Values.csv.path | quote }}
             - name: CSV_ENCODING
               value: {{ .Values.csv.encoding | quote }}
+            - name: MODULE_ASGI
+              value: {{ .Values.api.moduleAsgi | quote }}
             - name: FAIL_ON_MISSING_COLUMNS
               value: {{ ternary "true" "false" .Values.csv.failOnMissingColumns | quote }}
           volumeMounts:

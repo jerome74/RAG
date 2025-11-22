@@ -12,6 +12,9 @@ chromadb:
   modelName: "text-embedding-3-small"
   batchSize: 128
 
+api:
+  moduleAsgi: app.main
+
 csv:
   path: "/app/archive/estimate.csv" # Used if csv.url is empty
   encoding: "ISO-8859-1"

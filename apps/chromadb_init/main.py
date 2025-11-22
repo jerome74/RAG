@@ -29,34 +29,59 @@ import os
 import sys
 import json
 import logging
-from pathlib import Path
-from typing import List, Dict, Any, Optional
-
+import asyncio
 import pandas as pd
 import chromadb
+import uvicorn
+
+from chromadb.api.models import Collection
 from chromadb.utils import embedding_functions
 from agents.mcp import MCPServerStreamableHttp
 from dotenv import load_dotenv
+from agents import Agent, Runner, function_tool, trace
+from pathlib import Path
+from typing import List, Dict, Any, Optional
+from pydantic import BaseModel
+from fastapi.responses import JSONResponse
+from fastapi import FastAPI, Depends
 
-try:
-    import requests
-except Exception:
-    requests = None
+
+# Define request schema
+class EstimateRequest(BaseModel):
+    requirement: str
+
+# Initialize FastAPI app
+app = FastAPI()
+
+
+
+# Rag Class
+class Rag():
+    openai_ef: embedding_functions.OpenAIEmbeddingFunction
+    collection: Collection
+    datas: Dict[str, list]
+    df: pd.DataFrame
+
+rag: Rag = Rag()
 
 """
+##############################################################
 env function
 
-@param: name: str
+@param =  name: str
+##############################################################
 """
 
 def env(name: str) -> Optional[str]:
     return os.environ.get(name)
 
 """
+##############################################################
 setup_logging function
 
-@param: None
-@return None
+@param =  None
+@return =  None
+##############################################################
 """
 
 def setup_logging() -> None:
@@ -67,14 +92,16 @@ def setup_logging() -> None:
     )
 
 """
+##############################################################
 load_dataframe function
 
-@param: csv_path: Path, encoding: str
-@return DataFrame
+@param =  csv_path: Path, encoding: str
+@return =  None
+##############################################################
 """
 
 
-def load_dataframe(csv_path: Path, encoding: str) -> pd.DataFrame:
+def load_dataframe(csv_path: Path, encoding: str):
     logging.info(f"Current Working Directory (CWD): {Path.cwd()}")
     logging.info(f"Loading CSV: {csv_path}")
 
@@ -91,129 +118,209 @@ def load_dataframe(csv_path: Path, encoding: str) -> pd.DataFrame:
             raise e
         
     logging.info(f"Loaded {len(df)} rows.")
-    return df
+
+    rag.df = df
 
 """
+##############################################################
 generate_data_list function
 
-@param: df: pd.DataFrame
-@return list[list]
+@param =  None
+@return =  None
+##############################################################
 """
 
-def generate_data_list(df: pd.DataFrame) -> Dict[str, list]:
+def generate_data_list():
     
     try:
-        docs = df["document"].tolist()
-        ids = df["id"].tolist()
+        docs = rag.df["document"].tolist()
+        ids = rag.df["id"].tolist()
         metadatas = [
             {**json.loads(m), "title": t, "category": c, "source": s}
-            for m, t, c, s in zip(df["metadata_json"], df["title"], df["category"], df["source"])
+            for m, t, c, s in zip(rag.df["metadata_json"], rag.df["title"], rag.df["category"], rag.df["source"])
         ]
-        return {"docs": docs, "ids": ids, "metadatas": metadatas}
+        rag.datas = {"docs": docs, "ids": ids, "metadatas": metadatas}
     except Exception as e:
         logging.error(msg=f"error on retreive dataFrame information: {e}")
         raise e
 
 """
+##############################################################
 init_open_ai function
 
-@param: df: None
-@return embedding_functions.OpenAIEmbeddingFunction
+@param =  None
+@return =  None
+##############################################################
 """
 
-def init_open_ai() -> embedding_functions.OpenAIEmbeddingFunction:
+def init_open_ai():
 
     try:
         openai_ef = embedding_functions.OpenAIEmbeddingFunction(
-                    api_key=env("OPENAI_API_CYPHER"),
+                    api_key=env("OPENAI_API_KEY"),
                     model_name=env("MODEL_NAME")
                 )
         
-        return openai_ef
+        rag.openai_ef = openai_ef
     except Exception as e:
         logging.error(msg=f"error on init openai obj: {e}")
         raise e
 
 """
-init_agent_mcp function
-
-@param: df: None
-@return MCPServerStreamableHttp
-"""
-
-def init_agent_mcp() -> MCPServerStreamableHttp:
-
-    try:
-        exa_search_mcp = MCPServerStreamableHttp(
-            name="Exa Search MCP",
-            params={
-                "url": f"https://mcp.exa.ai/mcp?exaApiKey={env("EXA_KEY")}",
-                "timeout": 30,
-            },
-            client_session_timeout_seconds=30,
-            cache_tools_list=True,
-            max_retry_attempts=1)
-        
-        return exa_search_mcp
-    except Exception as e:
-        logging.error(msg=f"error on init exa search obj: {e}")
-        raise e
-
-"""
-connect_exa async function
-
-@param: df: exa_search_mcp: MCPServerStreamableHttp
-@return None
-"""
-
-async def connect_exa(exa_search_mcp: MCPServerStreamableHttp):
-    
-    try:
-        await exa_search_mcp.connect()
-    except Exception as e:
-        logging.error(msg=f"error on connect exa search obj: {e}")
-        raise e
-
-"""
+##############################################################
 populate_collection function
 
-@param: openai_ef: embedding_functions.OpenAIEmbeddingFunction, data: list[list]
-@return None
+@param =  none
+@return =  None
+##############################################################
 """
 
-def populate_collection(openai_ef: embedding_functions.OpenAIEmbeddingFunction, data: Dict[str, list]) -> None:
+def populate_collection():
 
     try:
         db_path=Path(env("DB_PATH"))
         db_path.mkdir(parents=True, exist_ok=True)
 
         chroma_client = chromadb.PersistentClient(db_path)
-        collection = chroma_client.get_or_create_collection(name=env("COLLECTION_NAME"))
 
-        docs = data["docs"]
-        ids = data["ids"]
-        metadatas = data["metadatas"]
+        try:
+            # Attempt to retrieve the collection
+            collection = chroma_client.get_collection(name=env("COLLECTION_NAME"))
+            print(f"Collection '{env("COLLECTION_NAME")}' exists.")
+            # You can now work with the 'collection' object
+            
+        except Exception: 
+            # Catch the exception raised when the collection is not found
+            print(f"Collection '{env("COLLECTION_NAME")}' does not exist.")
 
-        vectors = openai_ef(docs)
+            collection = chroma_client.get_or_create_collection(name=env("COLLECTION_NAME"))
 
-        collection.add(documents=docs, metadatas=metadatas, ids=ids, embeddings=vectors,)
-        
-        logging.info(f"count of {collection.count()} rows.")
+            docs = rag.datas["docs"]
+            ids = rag.datas["ids"]
+            metadatas = rag.datas["metadatas"]
 
-        logging.info("test query on simple [Alarms], result equals 3")
-        query = 'Alarms'
-        query_embeddings = openai_ef([query])
+            vectors = rag.openai_ef(docs)
 
-        logging.info(f"result is:{collection.query(query_embeddings=query_embeddings,n_results=3)}")
+            collection.add(documents=docs, metadatas=metadatas, ids=ids, embeddings=vectors,)
+            
+            logging.info(f"count of {collection.count()} rows.")
+
+            logging.info("test query on simple [Alarms], result equals 3")
+            query = 'Alarms'
+            query_embeddings = rag.openai_ef([query])
+
+            logging.info(f"result is:{collection.query(query_embeddings=query_embeddings,n_results=3)}")
+
+        rag.collection = collection
+
     except Exception as e:
         logging.error(msg=f"error on populate chroma collection: {e}")
         raise e
     
 """
+##############################################################
+estimation_lookup_tool function_tool function
+
+@param = query: str, max_results: int = 3
+@return =  str
+##############################################################
+"""    
+
+@function_tool
+def estimation_lookup_tool(query: str, max_results: int = 3) -> str:
+
+    query_embeddings = rag.openai_ef(["Alarms Module"])
+    results = rag.collection.query(query_embeddings=query_embeddings, n_results=max_results)
+
+    if not results["documents"][0]:
+        return f"No requirement information found for: {query}"
+
+    formatted_results = []
+    for i, doc in enumerate(results["documents"][0]):
+            metadata = results["metadatas"][0][i]
+            requirement = metadata["requirements"].title()
+            team = metadata["team"].title()
+            macro_activity = metadata["macro_activity"].title()
+            activity = metadata["activity"].title()
+            estimation_days = metadata["estimation_days"]
+            
+            formatted_results.append(
+                f"The requirement: {requirement}, related macro activity: {macro_activity}, the team : {team}, estimate per activity: {activity}, estimates of the quantity of {estimation_days}"
+            )
+
+    
+    logging.info("initialize Estimate Assistant...")
+        
+    return "Estimation Information:\n" + "\n".join(formatted_results)
+
+"""
+##############################################################
+estimate_endpoint async function
+
+@param =  estimate_agent: Agent, req: EstimateRequest
+@return =  JSONResponse
+##############################################################
+"""    
+
+
+
+@app.post("/estimate")
+async def estimate_endpoint(req: EstimateRequest) -> JSONResponse:
+    
+          
+          try: 
+
+            async with MCPServerStreamableHttp(
+                name="Exa Search MCP",
+                params={
+                    "url": f"https://mcp.exa.ai/mcp?exaApiKey={env("EXA_API_KEY")}",
+                    "timeout": 30,
+                },
+                client_session_timeout_seconds=30,
+                cache_tools_list=True,
+                max_retry_attempts=1) as exa_search_mcp:
+
+                await exa_search_mcp.connect()
+
+                estimate_agent = Agent(
+                    name="Estimate Assistant",
+                    instructions="""
+                    You are a helpful estimate assistant giving out estimate information related requirements and team information.
+                    You give concise answers.
+                    * You follow this workflow:
+                        0) First, use the estimation_lookup_tool to get the estimate information of the requirements. But only use the result if it's explicitly for the team, activity, requirements and estimantion days requested in the query.
+                        1) If you couldn't find the exact match for the requirements or you need to look up the estimation, search the EXA web to figure out the exact information you nees.
+                        Even if you have the estimation in the web search response, you should still use the estimation_lookup_tool to get the correct information of the estimation to make sure the information you provide is consistent.
+                        2) Then, if necessary, use the estimation_lookup_tool to get the estimation information of the requirements.
+                    * Even if you know the estimation of requirements, always use Exa Search to find the exact estimations.
+                    * Once you know the estimation, use the estimation_lookup_tool to get the estimation information of the individual team.
+                    * If the query is about requirement, in your final output give a list of element of the team involve in the estimation with their amount persons per team for a single element of the team. Also display the total estimation.
+                    * generate a table based on columns: Team_composition, persons per team, estimate and note. Fill whit the relative outcome values. Use a delimeter between any row
+                    * Don't use the estimation_lookup_tool more than 10 times.
+                    """,
+                    tools=[estimation_lookup_tool],
+                    mcp_servers=[exa_search_mcp],
+                    )
+                
+                result = await Runner.run(
+                            estimate_agent,
+                            f"Based on the requirements: Grid Visualization,Audit Module and Modulo di audit,how should a team be composed and how many day per activity :{req.requirement} ?"
+                )
+            
+            lines = [line.strip() for line in result.final_output.split("\n") if line.strip()]
+
+            return JSONResponse(content={"final_output": lines})
+          except Exception as e:
+            return JSONResponse(content={"error": str(e)}, status_code=500)
+
+
+"""
+##############################################################
 run function
 
-@param: None
-@return int
+@param =  None
+@return =  int
+##############################################################
 """
 
 def run() -> int:
@@ -221,10 +328,15 @@ def run() -> int:
     load_dotenv()
 
     try:
-        df = load_dataframe(Path(env("CSV_PATH")), encoding=env("CSV_ENCODING"))
-        data = generate_data_list(df)
-        openai_ef = init_open_ai()
-        populate_collection(data=data,openai_ef=openai_ef)
+
+        load_dataframe(Path(env("CSV_PATH")), encoding=env("CSV_ENCODING"))
+            
+        generate_data_list()
+        init_open_ai()
+        populate_collection()
+
+        uvicorn.run(f"{env("MODULE_ASGI")}:app", host="0.0.0.0", port=8000, reload=True)
+
 
     except Exception as e:
         logging.error(f"Failed on run function: {e}")
@@ -232,7 +344,7 @@ def run() -> int:
 
     return 0
 
-
+# START POINT
 if __name__ == "__main__":
     rc = run()
     sys.exit(rc)
