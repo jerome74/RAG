@@ -13,7 +13,22 @@ chromadb:
   batchSize: 128
 
 api:
-  moduleAsgi: app.main
+  moduleAsgi: main
+
+service:
+  annotations: {}
+  labels: {}
+  port: 80
+  targetPort: 8000
+  type: ClusterIP
+
+ingress:
+  annotations:
+    nginx.ingress.kubernetes.io/rewrite-target: /
+  labels: {}
+  ingressClassName: nginx
+
+
 
 csv:
   path: "/app/archive/estimate.csv" # Used if csv.url is empty
@@ -71,7 +86,9 @@ job:
   labels: {}
   restartPolicy: Never
 
-
+path: /
+pathType: Prefix
+host: www.rag.it
 nodeSelector: {}
 tolerations: []
 affinity: {}
