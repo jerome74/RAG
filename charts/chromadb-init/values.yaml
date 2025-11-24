@@ -88,7 +88,7 @@ job:
 
 path: /
 pathType: Prefix
-host: www.rag.it
+host: www.rag.wlp.example.it
 nodeSelector: {}
 tolerations: []
 affinity: {}
