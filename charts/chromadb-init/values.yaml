@@ -3,7 +3,7 @@ namespace:
 
 image:
   repository: "wlongo74/chromadb-init"
-  tag: "0.1.0"
+  tag: "0.1.1"
   pullPolicy: IfNotPresent
 
 chromadb:
@@ -60,6 +60,10 @@ cypher:
   openaiApiCypher: "VALUE"
   exaApiCypher: "VALUE"
 
+deployment:
+  annotations: {}
+  labels: {}
+
 job:
   backoffLimit: 1
   ttlSecondsAfterFinished: 86400
@@ -67,7 +71,7 @@ job:
   labels: {}
   restartPolicy: Never
 
-resources: {}
+
 nodeSelector: {}
 tolerations: []
 affinity: {}
@@ -75,6 +79,13 @@ podAnnotations: {}
 podLabels: {}
 serviceAccountName: ""
 imagePullSecrets: [] # e.g., [{ name: regcred }]
-
+replicaCount: 1
 podSecurityContext: {}
 securityContext: {}
+resources:
+  limits:
+    cpu: 500m
+    memory: 512Mi
+  requests:
+    cpu: 250m
+    memory: 256Mi

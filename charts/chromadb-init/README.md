@@ -1,6 +1,6 @@
 # chromadb-init Helm Chart
 
-This chart deploys a one-off Kubernetes Job that builds a ChromaDB persistent collection using OpenAI embeddings and stores the database on a PersistentVolumeClaim (PVC).
+This chart deploys a one-off Kubernetes deployment that builds a ChromaDB persistent collection using OpenAI embeddings and stores the database on a PersistentVolumeClaim (PVC).
 
 ## Contents
 - Overview
@@ -19,7 +19,7 @@ This chart deploys a one-off Kubernetes Job that builds a ChromaDB persistent co
 - It writes a persistent ChromaDB to a volume mounted at `/data` (configurable), defaulting to `/data/vectordb` in [charts/chromadb-init/values.yaml](values.yaml).
 - OpenAI API key is provided via a Kubernetes Secret rendered from [charts/chromadb-init/templates/secret.yaml](templates/secret.yaml).
 - Storage is provided by a PVC rendered from [charts/chromadb-init/templates/pvc.yaml](templates/pvc.yaml) or you can plug an existing one.
-- The Job definition is at [charts/chromadb-init/templates/job.yaml](templates/job.yaml).
+- The deployment definition is at [charts/chromadb-init/templates/deployment.yaml](templates/deployment.yaml).
 
 ## Prerequisites
 - Docker or another OCI-compliant builder
@@ -72,11 +72,11 @@ If you want to use an existing PVC instead of creating one:
       --set pvc.existingClaim=your-existing-claim
 
 ## Verify and inspect
-- Check Job and Pod:
+- Check deployment and Pod:
 
-      kubectl get jobs
+      kubectl get deployments
       kubectl get pods -l app.kubernetes.io/instance=chromadb-init
-      kubectl logs job/chromadb-init-init
+      kubectl logs deployment/chromadb-init-init
 
 - Confirm the PVC:
 
@@ -85,7 +85,7 @@ If you want to use an existing PVC instead of creating one:
 The script logs include the number of rows ingested and the final collection count.
 
 ## Re-run the initializer
-Jobs are not restarted automatically. To run again:
+deployments are not restarted automatically. To run again:
 
 1) Update a value (e.g., image.tag), then:
 
@@ -127,9 +127,9 @@ Main settings in [charts/chromadb-init/values.yaml](values.yaml):
 - secret.create: whether to create the Secret
 - secret.name: Secret name override
 - secret.openaiApiKey: OpenAI API key content (use `--set-file`)
-- job.backoffLimit: Job retries (default: `1`)
-- job.ttlSecondsAfterFinished: TTL after completion
-- job.restartPolicy: `Never` by default
+- deployment.backoffLimit: deployment retries (default: `1`)
+- deployment.ttlSecondsAfterFinished: TTL after completion
+- deployment.restartPolicy: `Never` by default
 - resources, nodeSelector, tolerations, affinity: standard pod settings
 
 ## Security notes
