@@ -3,14 +3,14 @@ id,title,document,source,category,metadata_json
 Requirement: Grid Visualization
 Description: Module that allows you to view an orthogonal representation of the network and graphically identify elements that meet a series of conditions (DER, Critical Issues, etc.). Usability, tool awareness
 Value/Goal: Usability, tool awareness",Audit_Alarms_KnowledgeBase_merged.csv,Requirements,"{""source_file"": ""Audit_Alarms_KnowledgeBase_merged.csv"", ""sheet"": ""Requirements"", ""requirements"": ""Grid Visualization"", ""value"": ""Usability, tool awareness"", ""team"": ""none"", ""macro_activity"": ""none"", ""activity"": ""none"", ""profile"": ""none"", ""rate_per_day"": ""none"", ""estimation_days"": NaN}"
-ffd11ba1-0b5f-49e1-9397-7e70834d01f7,Modulo di audit,"Sheet: Requirements
-Requirement: Modulo di audit
+ffd11ba1-0b5f-49e1-9397-7e70834d01f7,Audit Module,"Sheet: Requirements
+Requirement: Audit Module
 Description: Module that allows you to log all actions performed by users and services of the DERMS application. Process monitoring and tracking of any conflicts of interest (legal).
 Value/Goal: Process monitoring and tracking of potential conflicts of interest (legal)",Audit_Alarms_KnowledgeBase_merged.csv,Requirements,"{""source_file"": ""Audit_Alarms_KnowledgeBase_merged.csv"", ""sheet"": ""Requirements"", ""requirements"": ""Modulo di audit"", ""value"": ""Process monitoring and tracking of potential conflicts of interest (legal)"", ""team"": ""none"", ""macro_activity"": ""none"", ""activity"": ""none"", ""profile"": ""none"", ""rate_per_day"": ""none"", ""estimation_days"": NaN}"
-3b49db62-441e-4573-af6a-f4690f694b98,Audit Modul,"Sheet: Requirements
-Requirement: Audit Modul
+3b49db62-441e-4573-af6a-f4690f694b98,Alarms Module,"Sheet: Requirements
+Requirement: Alarms Module
 Description: Module for designing and managing alarms and notifications in DERMS (critical issues, new contracts, network load, etc.). Operator-configurable alerts, usability.
-Value/Goal: Operator-configurable alerts, usability",Audit_Alarms_KnowledgeBase_merged.csv,Requirements,"{""source_file"": ""Audit_Alarms_KnowledgeBase_merged.csv"", ""sheet"": ""Requirements"", ""requirements"": ""Audit Modul"", ""value"": ""Operator-configurable alerts, usability"", ""team"": ""none"", ""macro_activity"": ""none"", ""activity"": ""none"", ""profile"": ""none"", ""rate_per_day"": ""none"", ""estimation_days"": NaN}"
+Value/Goal: Operator-configurable alerts, usability",Audit_Alarms_KnowledgeBase_merged.csv,Requirements,"{""source_file"": ""Audit_Alarms_KnowledgeBase_merged.csv"", ""sheet"": ""Requirements"", ""requirements"": ""Audit Module"", ""value"": ""Operator-configurable alerts, usability"", ""team"": ""none"", ""macro_activity"": ""none"", ""activity"": ""none"", ""profile"": ""none"", ""rate_per_day"": ""none"", ""estimation_days"": NaN}"
 54dd5e0e-ba7a-4c28-aa15-25848ec40b0a,C.Calculation Team - Grid Visualization DERMS/ TL (Metamos paginacion y algunos filtros tambien) - DERMS Grid Visualization,"Sheet: Stimation
 Requirement: Grid Visualization
 Team: C.Calculation Team
@@ -487,173 +487,173 @@ MacroActivity: Settlement Process
 Activity: Trigger allarm
 Estimation (days): 2.0",Audit_Alarms_KnowledgeBase_merged.csv,Stimation,"{""source_file"": ""Audit_Alarms_KnowledgeBase_merged.csv"", ""sheet"": ""Stimation"", ""requirements"": ""Alarms Module"", ""value"": ""none"", ""team"": ""B.Flexibility Team"", ""macro_activity"": ""Settlement Process"", ""activity"": ""Trigger allarm"", ""profile"": ""none"", ""rate_per_day"": ""none"", ""estimation_days"": 2.0}"
 0cce295b-d8ad-47cc-8eff-11f1e1f7fc4f,E.GENERAL - Definition - Information to Log,"Sheet: Stimation
-Requirement: Audit Modul
+Requirement: Audit Module
 Team: E.GENERAL
 MacroActivity: Definition
 Activity: Information to Log
-Estimation (days): 10.0",Audit_Alarms_KnowledgeBase_merged.csv,Stimation,"{""source_file"": ""Audit_Alarms_KnowledgeBase_merged.csv"", ""sheet"": ""Stimation"", ""requirements"": ""Audit Modul"", ""value"": ""none"", ""team"": ""E.GENERAL"", ""macro_activity"": ""Definition"", ""activity"": ""Information to Log"", ""profile"": ""none"", ""rate_per_day"": ""none"", ""estimation_days"": 10.0}"
+Estimation (days): 10.0",Audit_Alarms_KnowledgeBase_merged.csv,Stimation,"{""source_file"": ""Audit_Alarms_KnowledgeBase_merged.csv"", ""sheet"": ""Stimation"", ""requirements"": ""Audit Module"", ""value"": ""none"", ""team"": ""E.GENERAL"", ""macro_activity"": ""Definition"", ""activity"": ""Information to Log"", ""profile"": ""none"", ""rate_per_day"": ""none"", ""estimation_days"": 10.0}"
 8ce6b441-0b9c-436a-8552-e019809ef53f,E.GENERAL - Definition - Techinical Document,"Sheet: Stimation
-Requirement: Audit Modul
+Requirement: Audit Module
 Team: E.GENERAL
 MacroActivity: Definition
 Activity: Techinical Document
-Estimation (days): 10.0",Audit_Alarms_KnowledgeBase_merged.csv,Stimation,"{""source_file"": ""Audit_Alarms_KnowledgeBase_merged.csv"", ""sheet"": ""Stimation"", ""requirements"": ""Audit Modul"", ""value"": ""none"", ""team"": ""E.GENERAL"", ""macro_activity"": ""Definition"", ""activity"": ""Techinical Document"", ""profile"": ""none"", ""rate_per_day"": ""none"", ""estimation_days"": 10.0}"
+Estimation (days): 10.0",Audit_Alarms_KnowledgeBase_merged.csv,Stimation,"{""source_file"": ""Audit_Alarms_KnowledgeBase_merged.csv"", ""sheet"": ""Stimation"", ""requirements"": ""Audit Module"", ""value"": ""none"", ""team"": ""E.GENERAL"", ""macro_activity"": ""Definition"", ""activity"": ""Techinical Document"", ""profile"": ""none"", ""rate_per_day"": ""none"", ""estimation_days"": 10.0}"
 87059d34-8cb6-4036-b206-1de174404b70,E.GENERAL - Training - Training,"Sheet: Stimation
-Requirement: Audit Modul
+Requirement: Audit Module
 Team: E.GENERAL
 MacroActivity: Training
 Activity: Training
-Estimation (days): 5.0",Audit_Alarms_KnowledgeBase_merged.csv,Stimation,"{""source_file"": ""Audit_Alarms_KnowledgeBase_merged.csv"", ""sheet"": ""Stimation"", ""requirements"": ""Audit Modul"", ""value"": ""none"", ""team"": ""E.GENERAL"", ""macro_activity"": ""Training"", ""activity"": ""Training"", ""profile"": ""none"", ""rate_per_day"": ""none"", ""estimation_days"": 5.0}"
+Estimation (days): 5.0",Audit_Alarms_KnowledgeBase_merged.csv,Stimation,"{""source_file"": ""Audit_Alarms_KnowledgeBase_merged.csv"", ""sheet"": ""Stimation"", ""requirements"": ""Audit Module"", ""value"": ""none"", ""team"": ""E.GENERAL"", ""macro_activity"": ""Training"", ""activity"": ""Training"", ""profile"": ""none"", ""rate_per_day"": ""none"", ""estimation_days"": 5.0}"
 22beb971-d8b9-4dab-b8a8-b2cb9e2d25fc,E.GENERAL - Manual - Manual,"Sheet: Stimation
-Requirement: Audit Modul
+Requirement: Audit Module
 Team: E.GENERAL
 MacroActivity: Manual
 Activity: Manual
-Estimation (days): 5.0",Audit_Alarms_KnowledgeBase_merged.csv,Stimation,"{""source_file"": ""Audit_Alarms_KnowledgeBase_merged.csv"", ""sheet"": ""Stimation"", ""requirements"": ""Audit Modul"", ""value"": ""none"", ""team"": ""E.GENERAL"", ""macro_activity"": ""Manual"", ""activity"": ""Manual"", ""profile"": ""none"", ""rate_per_day"": ""none"", ""estimation_days"": 5.0}"
+Estimation (days): 5.0",Audit_Alarms_KnowledgeBase_merged.csv,Stimation,"{""source_file"": ""Audit_Alarms_KnowledgeBase_merged.csv"", ""sheet"": ""Stimation"", ""requirements"": ""Audit Module"", ""value"": ""none"", ""team"": ""E.GENERAL"", ""macro_activity"": ""Manual"", ""activity"": ""Manual"", ""profile"": ""none"", ""rate_per_day"": ""none"", ""estimation_days"": 5.0}"
 cdcecca4-8914-4534-ac06-38f4dabeb22f,E.GENERAL - UAT - UAT,"Sheet: Stimation
-Requirement: Audit Modul
+Requirement: Audit Module
 Team: E.GENERAL
 MacroActivity: UAT
 Activity: UAT
-Estimation (days): 15.0",Audit_Alarms_KnowledgeBase_merged.csv,Stimation,"{""source_file"": ""Audit_Alarms_KnowledgeBase_merged.csv"", ""sheet"": ""Stimation"", ""requirements"": ""Audit Modul"", ""value"": ""none"", ""team"": ""E.GENERAL"", ""macro_activity"": ""UAT"", ""activity"": ""UAT"", ""profile"": ""none"", ""rate_per_day"": ""none"", ""estimation_days"": 15.0}"
+Estimation (days): 15.0",Audit_Alarms_KnowledgeBase_merged.csv,Stimation,"{""source_file"": ""Audit_Alarms_KnowledgeBase_merged.csv"", ""sheet"": ""Stimation"", ""requirements"": ""Audit Module"", ""value"": ""none"", ""team"": ""E.GENERAL"", ""macro_activity"": ""UAT"", ""activity"": ""UAT"", ""profile"": ""none"", ""rate_per_day"": ""none"", ""estimation_days"": 15.0}"
 b741a51a-e436-4bf6-90f9-5f7c38d823fa,B.Flexibility Team - Flex Microservices - VPP,"Sheet: Stimation
-Requirement: Audit Modul
+Requirement: Audit Module
 Team: B.Flexibility Team
 MacroActivity: Flex Microservices
 Activity: VPP
-Estimation (days): 2.0",Audit_Alarms_KnowledgeBase_merged.csv,Stimation,"{""source_file"": ""Audit_Alarms_KnowledgeBase_merged.csv"", ""sheet"": ""Stimation"", ""requirements"": ""Audit Modul"", ""value"": ""none"", ""team"": ""B.Flexibility Team"", ""macro_activity"": ""Flex Microservices"", ""activity"": ""VPP"", ""profile"": ""none"", ""rate_per_day"": ""none"", ""estimation_days"": 2.0}"
+Estimation (days): 2.0",Audit_Alarms_KnowledgeBase_merged.csv,Stimation,"{""source_file"": ""Audit_Alarms_KnowledgeBase_merged.csv"", ""sheet"": ""Stimation"", ""requirements"": ""Audit Module"", ""value"": ""none"", ""team"": ""B.Flexibility Team"", ""macro_activity"": ""Flex Microservices"", ""activity"": ""VPP"", ""profile"": ""none"", ""rate_per_day"": ""none"", ""estimation_days"": 2.0}"
 afc8a5ca-081e-4224-820e-c72ce4018659,B.Flexibility Team - Flex Microservices - Front,"Sheet: Stimation
-Requirement: Audit Modul
+Requirement: Audit Module
 Team: B.Flexibility Team
 MacroActivity: Flex Microservices
 Activity: Front
-Estimation (days): 2.0",Audit_Alarms_KnowledgeBase_merged.csv,Stimation,"{""source_file"": ""Audit_Alarms_KnowledgeBase_merged.csv"", ""sheet"": ""Stimation"", ""requirements"": ""Audit Modul"", ""value"": ""none"", ""team"": ""B.Flexibility Team"", ""macro_activity"": ""Flex Microservices"", ""activity"": ""Front"", ""profile"": ""none"", ""rate_per_day"": ""none"", ""estimation_days"": 2.0}"
+Estimation (days): 2.0",Audit_Alarms_KnowledgeBase_merged.csv,Stimation,"{""source_file"": ""Audit_Alarms_KnowledgeBase_merged.csv"", ""sheet"": ""Stimation"", ""requirements"": ""Audit Module"", ""value"": ""none"", ""team"": ""B.Flexibility Team"", ""macro_activity"": ""Flex Microservices"", ""activity"": ""Front"", ""profile"": ""none"", ""rate_per_day"": ""none"", ""estimation_days"": 2.0}"
 003e2fed-eacd-4535-be8a-661470ea518b,B.Flexibility Team - Flex Microservices - Broker,"Sheet: Stimation
-Requirement: Audit Modul
+Requirement: Audit Module
 Team: B.Flexibility Team
 MacroActivity: Flex Microservices
 Activity: Broker
-Estimation (days): 2.0",Audit_Alarms_KnowledgeBase_merged.csv,Stimation,"{""source_file"": ""Audit_Alarms_KnowledgeBase_merged.csv"", ""sheet"": ""Stimation"", ""requirements"": ""Audit Modul"", ""value"": ""none"", ""team"": ""B.Flexibility Team"", ""macro_activity"": ""Flex Microservices"", ""activity"": ""Broker"", ""profile"": ""none"", ""rate_per_day"": ""none"", ""estimation_days"": 2.0}"
+Estimation (days): 2.0",Audit_Alarms_KnowledgeBase_merged.csv,Stimation,"{""source_file"": ""Audit_Alarms_KnowledgeBase_merged.csv"", ""sheet"": ""Stimation"", ""requirements"": ""Audit Module"", ""value"": ""none"", ""team"": ""B.Flexibility Team"", ""macro_activity"": ""Flex Microservices"", ""activity"": ""Broker"", ""profile"": ""none"", ""rate_per_day"": ""none"", ""estimation_days"": 2.0}"
 dff73bbf-7fa1-405a-a6c8-a01207db378b,B.Flexibility Team - Flex Microservices - Billing,"Sheet: Stimation
-Requirement: Audit Modul
+Requirement: Audit Module
 Team: B.Flexibility Team
 MacroActivity: Flex Microservices
 Activity: Billing
-Estimation (days): 2.0",Audit_Alarms_KnowledgeBase_merged.csv,Stimation,"{""source_file"": ""Audit_Alarms_KnowledgeBase_merged.csv"", ""sheet"": ""Stimation"", ""requirements"": ""Audit Modul"", ""value"": ""none"", ""team"": ""B.Flexibility Team"", ""macro_activity"": ""Flex Microservices"", ""activity"": ""Billing"", ""profile"": ""none"", ""rate_per_day"": ""none"", ""estimation_days"": 2.0}"
+Estimation (days): 2.0",Audit_Alarms_KnowledgeBase_merged.csv,Stimation,"{""source_file"": ""Audit_Alarms_KnowledgeBase_merged.csv"", ""sheet"": ""Stimation"", ""requirements"": ""Audit Module"", ""value"": ""none"", ""team"": ""B.Flexibility Team"", ""macro_activity"": ""Flex Microservices"", ""activity"": ""Billing"", ""profile"": ""none"", ""rate_per_day"": ""none"", ""estimation_days"": 2.0}"
 40570cd3-bf32-4667-9f30-fc0b634c564d,B.Flexibility Team - Flex Microservices - Security,"Sheet: Stimation
-Requirement: Audit Modul
+Requirement: Audit Module
 Team: B.Flexibility Team
 MacroActivity: Flex Microservices
 Activity: Security
-Estimation (days): 2.0",Audit_Alarms_KnowledgeBase_merged.csv,Stimation,"{""source_file"": ""Audit_Alarms_KnowledgeBase_merged.csv"", ""sheet"": ""Stimation"", ""requirements"": ""Audit Modul"", ""value"": ""none"", ""team"": ""B.Flexibility Team"", ""macro_activity"": ""Flex Microservices"", ""activity"": ""Security"", ""profile"": ""none"", ""rate_per_day"": ""none"", ""estimation_days"": 2.0}"
+Estimation (days): 2.0",Audit_Alarms_KnowledgeBase_merged.csv,Stimation,"{""source_file"": ""Audit_Alarms_KnowledgeBase_merged.csv"", ""sheet"": ""Stimation"", ""requirements"": ""Audit Module"", ""value"": ""none"", ""team"": ""B.Flexibility Team"", ""macro_activity"": ""Flex Microservices"", ""activity"": ""Security"", ""profile"": ""none"", ""rate_per_day"": ""none"", ""estimation_days"": 2.0}"
 1b699fe3-88ca-4040-b21c-e9b9e0d5646e,B.Flexibility Team - Flex Microservices - EMS,"Sheet: Stimation
-Requirement: Audit Modul
+Requirement: Audit Module
 Team: B.Flexibility Team
 MacroActivity: Flex Microservices
 Activity: EMS
-Estimation (days): 2.0",Audit_Alarms_KnowledgeBase_merged.csv,Stimation,"{""source_file"": ""Audit_Alarms_KnowledgeBase_merged.csv"", ""sheet"": ""Stimation"", ""requirements"": ""Audit Modul"", ""value"": ""none"", ""team"": ""B.Flexibility Team"", ""macro_activity"": ""Flex Microservices"", ""activity"": ""EMS"", ""profile"": ""none"", ""rate_per_day"": ""none"", ""estimation_days"": 2.0}"
+Estimation (days): 2.0",Audit_Alarms_KnowledgeBase_merged.csv,Stimation,"{""source_file"": ""Audit_Alarms_KnowledgeBase_merged.csv"", ""sheet"": ""Stimation"", ""requirements"": ""Audit Module"", ""value"": ""none"", ""team"": ""B.Flexibility Team"", ""macro_activity"": ""Flex Microservices"", ""activity"": ""EMS"", ""profile"": ""none"", ""rate_per_day"": ""none"", ""estimation_days"": 2.0}"
 6b200dc3-6120-49d0-884e-28fb9552a55e,B.Flexibility Team - Flex Microservices - Market,"Sheet: Stimation
-Requirement: Audit Modul
+Requirement: Audit Module
 Team: B.Flexibility Team
 MacroActivity: Flex Microservices
 Activity: Market
-Estimation (days): 2.0",Audit_Alarms_KnowledgeBase_merged.csv,Stimation,"{""source_file"": ""Audit_Alarms_KnowledgeBase_merged.csv"", ""sheet"": ""Stimation"", ""requirements"": ""Audit Modul"", ""value"": ""none"", ""team"": ""B.Flexibility Team"", ""macro_activity"": ""Flex Microservices"", ""activity"": ""Market"", ""profile"": ""none"", ""rate_per_day"": ""none"", ""estimation_days"": 2.0}"
+Estimation (days): 2.0",Audit_Alarms_KnowledgeBase_merged.csv,Stimation,"{""source_file"": ""Audit_Alarms_KnowledgeBase_merged.csv"", ""sheet"": ""Stimation"", ""requirements"": ""Audit Module"", ""value"": ""none"", ""team"": ""B.Flexibility Team"", ""macro_activity"": ""Flex Microservices"", ""activity"": ""Market"", ""profile"": ""none"", ""rate_per_day"": ""none"", ""estimation_days"": 2.0}"
 eb2f7aed-62a7-47cc-86d9-22563d71829d,B.Flexibility Team - Flex Microservices - Comms,"Sheet: Stimation
-Requirement: Audit Modul
+Requirement: Audit Module
 Team: B.Flexibility Team
 MacroActivity: Flex Microservices
 Activity: Comms
-Estimation (days): 2.0",Audit_Alarms_KnowledgeBase_merged.csv,Stimation,"{""source_file"": ""Audit_Alarms_KnowledgeBase_merged.csv"", ""sheet"": ""Stimation"", ""requirements"": ""Audit Modul"", ""value"": ""none"", ""team"": ""B.Flexibility Team"", ""macro_activity"": ""Flex Microservices"", ""activity"": ""Comms"", ""profile"": ""none"", ""rate_per_day"": ""none"", ""estimation_days"": 2.0}"
+Estimation (days): 2.0",Audit_Alarms_KnowledgeBase_merged.csv,Stimation,"{""source_file"": ""Audit_Alarms_KnowledgeBase_merged.csv"", ""sheet"": ""Stimation"", ""requirements"": ""Audit Module"", ""value"": ""none"", ""team"": ""B.Flexibility Team"", ""macro_activity"": ""Flex Microservices"", ""activity"": ""Comms"", ""profile"": ""none"", ""rate_per_day"": ""none"", ""estimation_days"": 2.0}"
 5cdfd0e9-329f-4949-8a8c-8d32d3fd029f,B.Flexibility Team - Flex Microservices - Comms,"Sheet: Stimation
-Requirement: Audit Modul
+Requirement: Audit Module
 Team: B.Flexibility Team
 MacroActivity: Flex Microservices
 Activity: Comms
-Estimation (days): 2.0",Audit_Alarms_KnowledgeBase_merged.csv,Stimation,"{""source_file"": ""Audit_Alarms_KnowledgeBase_merged.csv"", ""sheet"": ""Stimation"", ""requirements"": ""Audit Modul"", ""value"": ""none"", ""team"": ""B.Flexibility Team"", ""macro_activity"": ""Flex Microservices"", ""activity"": ""Comms"", ""profile"": ""none"", ""rate_per_day"": ""none"", ""estimation_days"": 2.0}"
+Estimation (days): 2.0",Audit_Alarms_KnowledgeBase_merged.csv,Stimation,"{""source_file"": ""Audit_Alarms_KnowledgeBase_merged.csv"", ""sheet"": ""Stimation"", ""requirements"": ""Audit Module"", ""value"": ""none"", ""team"": ""B.Flexibility Team"", ""macro_activity"": ""Flex Microservices"", ""activity"": ""Comms"", ""profile"": ""none"", ""rate_per_day"": ""none"", ""estimation_days"": 2.0}"
 fe8d462b-0c81-404f-a8ab-76e414880f52,B.Flexibility Team - Flex Microservices - Comms,"Sheet: Stimation
-Requirement: Audit Modul
+Requirement: Audit Module
 Team: B.Flexibility Team
 MacroActivity: Flex Microservices
 Activity: Comms
-Estimation (days): 2.0",Audit_Alarms_KnowledgeBase_merged.csv,Stimation,"{""source_file"": ""Audit_Alarms_KnowledgeBase_merged.csv"", ""sheet"": ""Stimation"", ""requirements"": ""Audit Modul"", ""value"": ""none"", ""team"": ""B.Flexibility Team"", ""macro_activity"": ""Flex Microservices"", ""activity"": ""Comms"", ""profile"": ""none"", ""rate_per_day"": ""none"", ""estimation_days"": 2.0}"
+Estimation (days): 2.0",Audit_Alarms_KnowledgeBase_merged.csv,Stimation,"{""source_file"": ""Audit_Alarms_KnowledgeBase_merged.csv"", ""sheet"": ""Stimation"", ""requirements"": ""Audit Module"", ""value"": ""none"", ""team"": ""B.Flexibility Team"", ""macro_activity"": ""Flex Microservices"", ""activity"": ""Comms"", ""profile"": ""none"", ""rate_per_day"": ""none"", ""estimation_days"": 2.0}"
 902b02f0-d8b2-499a-ab7e-57cbbf850d41,A.Platform Team - Platform - Extractor vs Platform,"Sheet: Stimation
-Requirement: Audit Modul
+Requirement: Audit Module
 Team: A.Platform Team
 MacroActivity: Platform
 Activity: Extractor vs Platform
-Estimation (days): 4.0",Audit_Alarms_KnowledgeBase_merged.csv,Stimation,"{""source_file"": ""Audit_Alarms_KnowledgeBase_merged.csv"", ""sheet"": ""Stimation"", ""requirements"": ""Audit Modul"", ""value"": ""none"", ""team"": ""A.Platform Team"", ""macro_activity"": ""Platform"", ""activity"": ""Extractor vs Platform"", ""profile"": ""none"", ""rate_per_day"": ""none"", ""estimation_days"": 4.0}"
+Estimation (days): 4.0",Audit_Alarms_KnowledgeBase_merged.csv,Stimation,"{""source_file"": ""Audit_Alarms_KnowledgeBase_merged.csv"", ""sheet"": ""Stimation"", ""requirements"": ""Audit Module"", ""value"": ""none"", ""team"": ""A.Platform Team"", ""macro_activity"": ""Platform"", ""activity"": ""Extractor vs Platform"", ""profile"": ""none"", ""rate_per_day"": ""none"", ""estimation_days"": 4.0}"
 5142be30-a429-4efe-9c52-1fb2f6194a7d,A.Platform Team - Platform - Extractor vs Flex,"Sheet: Stimation
-Requirement: Audit Modul
+Requirement: Audit Module
 Team: A.Platform Team
 MacroActivity: Platform
 Activity: Extractor vs Flex
-Estimation (days): 4.0",Audit_Alarms_KnowledgeBase_merged.csv,Stimation,"{""source_file"": ""Audit_Alarms_KnowledgeBase_merged.csv"", ""sheet"": ""Stimation"", ""requirements"": ""Audit Modul"", ""value"": ""none"", ""team"": ""A.Platform Team"", ""macro_activity"": ""Platform"", ""activity"": ""Extractor vs Flex"", ""profile"": ""none"", ""rate_per_day"": ""none"", ""estimation_days"": 4.0}"
+Estimation (days): 4.0",Audit_Alarms_KnowledgeBase_merged.csv,Stimation,"{""source_file"": ""Audit_Alarms_KnowledgeBase_merged.csv"", ""sheet"": ""Stimation"", ""requirements"": ""Audit Module"", ""value"": ""none"", ""team"": ""A.Platform Team"", ""macro_activity"": ""Platform"", ""activity"": ""Extractor vs Flex"", ""profile"": ""none"", ""rate_per_day"": ""none"", ""estimation_days"": 4.0}"
 e4c927a9-69c0-4ac8-ae0c-4790129bc23c,C.Calculation Engine - Calculation engine microservices Edge - Comms,"Sheet: Stimation
-Requirement: Audit Modul
+Requirement: Audit Module
 Team: C.Calculation Engine
 MacroActivity: Calculation engine microservices Edge
 Activity: Comms
-Estimation (days): 2.0",Audit_Alarms_KnowledgeBase_merged.csv,Stimation,"{""source_file"": ""Audit_Alarms_KnowledgeBase_merged.csv"", ""sheet"": ""Stimation"", ""requirements"": ""Audit Modul"", ""value"": ""none"", ""team"": ""C.Calculation Engine"", ""macro_activity"": ""Calculation engine microservices Edge"", ""activity"": ""Comms"", ""profile"": ""none"", ""rate_per_day"": ""none"", ""estimation_days"": 2.0}"
+Estimation (days): 2.0",Audit_Alarms_KnowledgeBase_merged.csv,Stimation,"{""source_file"": ""Audit_Alarms_KnowledgeBase_merged.csv"", ""sheet"": ""Stimation"", ""requirements"": ""Audit Module"", ""value"": ""none"", ""team"": ""C.Calculation Engine"", ""macro_activity"": ""Calculation engine microservices Edge"", ""activity"": ""Comms"", ""profile"": ""none"", ""rate_per_day"": ""none"", ""estimation_days"": 2.0}"
 100a8528-a7fa-49c1-845d-8050a79d6218,C.Calculation Engine - Calculation engine microservices TL - Comms,"Sheet: Stimation
-Requirement: Audit Modul
+Requirement: Audit Module
 Team: C.Calculation Engine
 MacroActivity: Calculation engine microservices TL
 Activity: Comms
-Estimation (days): 2.0",Audit_Alarms_KnowledgeBase_merged.csv,Stimation,"{""source_file"": ""Audit_Alarms_KnowledgeBase_merged.csv"", ""sheet"": ""Stimation"", ""requirements"": ""Audit Modul"", ""value"": ""none"", ""team"": ""C.Calculation Engine"", ""macro_activity"": ""Calculation engine microservices TL"", ""activity"": ""Comms"", ""profile"": ""none"", ""rate_per_day"": ""none"", ""estimation_days"": 2.0}"
+Estimation (days): 2.0",Audit_Alarms_KnowledgeBase_merged.csv,Stimation,"{""source_file"": ""Audit_Alarms_KnowledgeBase_merged.csv"", ""sheet"": ""Stimation"", ""requirements"": ""Audit Module"", ""value"": ""none"", ""team"": ""C.Calculation Engine"", ""macro_activity"": ""Calculation engine microservices TL"", ""activity"": ""Comms"", ""profile"": ""none"", ""rate_per_day"": ""none"", ""estimation_days"": 2.0}"
 6e7d9e56-0006-408e-9f6a-9709e06e343b,C.Calculation Engine - Calculation engine microservices Col - Comms,"Sheet: Stimation
-Requirement: Audit Modul
+Requirement: Audit Module
 Team: C.Calculation Engine
 MacroActivity: Calculation engine microservices Col
 Activity: Comms
-Estimation (days): 2.0",Audit_Alarms_KnowledgeBase_merged.csv,Stimation,"{""source_file"": ""Audit_Alarms_KnowledgeBase_merged.csv"", ""sheet"": ""Stimation"", ""requirements"": ""Audit Modul"", ""value"": ""none"", ""team"": ""C.Calculation Engine"", ""macro_activity"": ""Calculation engine microservices Col"", ""activity"": ""Comms"", ""profile"": ""none"", ""rate_per_day"": ""none"", ""estimation_days"": 2.0}"
+Estimation (days): 2.0",Audit_Alarms_KnowledgeBase_merged.csv,Stimation,"{""source_file"": ""Audit_Alarms_KnowledgeBase_merged.csv"", ""sheet"": ""Stimation"", ""requirements"": ""Audit Module"", ""value"": ""none"", ""team"": ""C.Calculation Engine"", ""macro_activity"": ""Calculation engine microservices Col"", ""activity"": ""Comms"", ""profile"": ""none"", ""rate_per_day"": ""none"", ""estimation_days"": 2.0}"
 93b4cd75-40a5-407b-9497-ae6d0c5764cc,A.Platform Team - ElasticSearch - Install,"Sheet: Stimation
-Requirement: Audit Modul
+Requirement: Audit Module
 Team: A.Platform Team
 MacroActivity: ElasticSearch
 Activity: Install
-Estimation (days): 2.0",Audit_Alarms_KnowledgeBase_merged.csv,Stimation,"{""source_file"": ""Audit_Alarms_KnowledgeBase_merged.csv"", ""sheet"": ""Stimation"", ""requirements"": ""Audit Modul"", ""value"": ""none"", ""team"": ""A.Platform Team"", ""macro_activity"": ""ElasticSearch"", ""activity"": ""Install"", ""profile"": ""none"", ""rate_per_day"": ""none"", ""estimation_days"": 2.0}"
+Estimation (days): 2.0",Audit_Alarms_KnowledgeBase_merged.csv,Stimation,"{""source_file"": ""Audit_Alarms_KnowledgeBase_merged.csv"", ""sheet"": ""Stimation"", ""requirements"": ""Audit Module"", ""value"": ""none"", ""team"": ""A.Platform Team"", ""macro_activity"": ""ElasticSearch"", ""activity"": ""Install"", ""profile"": ""none"", ""rate_per_day"": ""none"", ""estimation_days"": 2.0}"
 3b2ab730-4a29-46a3-a0bc-afdc8288649f,A.Platform Team - ElasticSearch - Security,"Sheet: Stimation
-Requirement: Audit Modul
+Requirement: Audit Module
 Team: A.Platform Team
 MacroActivity: ElasticSearch
 Activity: Security
-Estimation (days): 2.0",Audit_Alarms_KnowledgeBase_merged.csv,Stimation,"{""source_file"": ""Audit_Alarms_KnowledgeBase_merged.csv"", ""sheet"": ""Stimation"", ""requirements"": ""Audit Modul"", ""value"": ""none"", ""team"": ""A.Platform Team"", ""macro_activity"": ""ElasticSearch"", ""activity"": ""Security"", ""profile"": ""none"", ""rate_per_day"": ""none"", ""estimation_days"": 2.0}"
+Estimation (days): 2.0",Audit_Alarms_KnowledgeBase_merged.csv,Stimation,"{""source_file"": ""Audit_Alarms_KnowledgeBase_merged.csv"", ""sheet"": ""Stimation"", ""requirements"": ""Audit Module"", ""value"": ""none"", ""team"": ""A.Platform Team"", ""macro_activity"": ""ElasticSearch"", ""activity"": ""Security"", ""profile"": ""none"", ""rate_per_day"": ""none"", ""estimation_days"": 2.0}"
 b0faabe4-d93a-4867-9185-8822484bdc79,A.Platform Team - ElasticSearch - Indexes,"Sheet: Stimation
-Requirement: Audit Modul
+Requirement: Audit Module
 Team: A.Platform Team
 MacroActivity: ElasticSearch
 Activity: Indexes
-Estimation (days): 2.0",Audit_Alarms_KnowledgeBase_merged.csv,Stimation,"{""source_file"": ""Audit_Alarms_KnowledgeBase_merged.csv"", ""sheet"": ""Stimation"", ""requirements"": ""Audit Modul"", ""value"": ""none"", ""team"": ""A.Platform Team"", ""macro_activity"": ""ElasticSearch"", ""activity"": ""Indexes"", ""profile"": ""none"", ""rate_per_day"": ""none"", ""estimation_days"": 2.0}"
+Estimation (days): 2.0",Audit_Alarms_KnowledgeBase_merged.csv,Stimation,"{""source_file"": ""Audit_Alarms_KnowledgeBase_merged.csv"", ""sheet"": ""Stimation"", ""requirements"": ""Audit Module"", ""value"": ""none"", ""team"": ""A.Platform Team"", ""macro_activity"": ""ElasticSearch"", ""activity"": ""Indexes"", ""profile"": ""none"", ""rate_per_day"": ""none"", ""estimation_days"": 2.0}"
 0479ddcd-95ef-4cff-938b-78c8025ec608,A.Platform Team - Kibana - Install,"Sheet: Stimation
-Requirement: Audit Modul
+Requirement: Audit Module
 Team: A.Platform Team
 MacroActivity: Kibana
 Activity: Install
-Estimation (days): 2.0",Audit_Alarms_KnowledgeBase_merged.csv,Stimation,"{""source_file"": ""Audit_Alarms_KnowledgeBase_merged.csv"", ""sheet"": ""Stimation"", ""requirements"": ""Audit Modul"", ""value"": ""none"", ""team"": ""A.Platform Team"", ""macro_activity"": ""Kibana"", ""activity"": ""Install"", ""profile"": ""none"", ""rate_per_day"": ""none"", ""estimation_days"": 2.0}"
+Estimation (days): 2.0",Audit_Alarms_KnowledgeBase_merged.csv,Stimation,"{""source_file"": ""Audit_Alarms_KnowledgeBase_merged.csv"", ""sheet"": ""Stimation"", ""requirements"": ""Audit Module"", ""value"": ""none"", ""team"": ""A.Platform Team"", ""macro_activity"": ""Kibana"", ""activity"": ""Install"", ""profile"": ""none"", ""rate_per_day"": ""none"", ""estimation_days"": 2.0}"
 9f18ec63-9439-46f7-a11b-87c67bd84c21,A.Platform Team - Kibana - Security,"Sheet: Stimation
-Requirement: Audit Modul
+Requirement: Audit Module
 Team: A.Platform Team
 MacroActivity: Kibana
 Activity: Security
-Estimation (days): 2.0",Audit_Alarms_KnowledgeBase_merged.csv,Stimation,"{""source_file"": ""Audit_Alarms_KnowledgeBase_merged.csv"", ""sheet"": ""Stimation"", ""requirements"": ""Audit Modul"", ""value"": ""none"", ""team"": ""A.Platform Team"", ""macro_activity"": ""Kibana"", ""activity"": ""Security"", ""profile"": ""none"", ""rate_per_day"": ""none"", ""estimation_days"": 2.0}"
+Estimation (days): 2.0",Audit_Alarms_KnowledgeBase_merged.csv,Stimation,"{""source_file"": ""Audit_Alarms_KnowledgeBase_merged.csv"", ""sheet"": ""Stimation"", ""requirements"": ""Audit Module"", ""value"": ""none"", ""team"": ""A.Platform Team"", ""macro_activity"": ""Kibana"", ""activity"": ""Security"", ""profile"": ""none"", ""rate_per_day"": ""none"", ""estimation_days"": 2.0}"
 6963531f-e584-46c9-b3dc-ae692c11a64e,A.Platform Team - Kibana - Alerts,"Sheet: Stimation
-Requirement: Audit Modul
+Requirement: Audit Module
 Team: A.Platform Team
 MacroActivity: Kibana
 Activity: Alerts
-Estimation (days): 2.0",Audit_Alarms_KnowledgeBase_merged.csv,Stimation,"{""source_file"": ""Audit_Alarms_KnowledgeBase_merged.csv"", ""sheet"": ""Stimation"", ""requirements"": ""Audit Modul"", ""value"": ""none"", ""team"": ""A.Platform Team"", ""macro_activity"": ""Kibana"", ""activity"": ""Alerts"", ""profile"": ""none"", ""rate_per_day"": ""none"", ""estimation_days"": 2.0}"
+Estimation (days): 2.0",Audit_Alarms_KnowledgeBase_merged.csv,Stimation,"{""source_file"": ""Audit_Alarms_KnowledgeBase_merged.csv"", ""sheet"": ""Stimation"", ""requirements"": ""Audit Module"", ""value"": ""none"", ""team"": ""A.Platform Team"", ""macro_activity"": ""Kibana"", ""activity"": ""Alerts"", ""profile"": ""none"", ""rate_per_day"": ""none"", ""estimation_days"": 2.0}"
 c1faf03a-2597-47f1-bb56-f2ff8198b5ce,A.Platform Team - Kibana - Definition,"Sheet: Stimation
-Requirement: Audit Modul
+Requirement: Audit Module
 Team: A.Platform Team
 MacroActivity: Kibana
 Activity: Definition
-Estimation (days): 5.0",Audit_Alarms_KnowledgeBase_merged.csv,Stimation,"{""source_file"": ""Audit_Alarms_KnowledgeBase_merged.csv"", ""sheet"": ""Stimation"", ""requirements"": ""Audit Modul"", ""value"": ""none"", ""team"": ""A.Platform Team"", ""macro_activity"": ""Kibana"", ""activity"": ""Definition"", ""profile"": ""none"", ""rate_per_day"": ""none"", ""estimation_days"": 5.0}"
+Estimation (days): 5.0",Audit_Alarms_KnowledgeBase_merged.csv,Stimation,"{""source_file"": ""Audit_Alarms_KnowledgeBase_merged.csv"", ""sheet"": ""Stimation"", ""requirements"": ""Audit Module"", ""value"": ""none"", ""team"": ""A.Platform Team"", ""macro_activity"": ""Kibana"", ""activity"": ""Definition"", ""profile"": ""none"", ""rate_per_day"": ""none"", ""estimation_days"": 5.0}"
 a49c7cbe-9c9c-4c9c-a96f-1d2eb6db00ed,A.Platform Team - Kibana - Dashboards,"Sheet: Stimation
-Requirement: Audit Modul
+Requirement: Audit Module
 Team: A.Platform Team
 MacroActivity: Kibana
 Activity: Dashboards
-Estimation (days): 8.0",Audit_Alarms_KnowledgeBase_merged.csv,Stimation,"{""source_file"": ""Audit_Alarms_KnowledgeBase_merged.csv"", ""sheet"": ""Stimation"", ""requirements"": ""Audit Modul"", ""value"": ""none"", ""team"": ""A.Platform Team"", ""macro_activity"": ""Kibana"", ""activity"": ""Dashboards"", ""profile"": ""none"", ""rate_per_day"": ""none"", ""estimation_days"": 8.0}"
+Estimation (days): 8.0",Audit_Alarms_KnowledgeBase_merged.csv,Stimation,"{""source_file"": ""Audit_Alarms_KnowledgeBase_merged.csv"", ""sheet"": ""Stimation"", ""requirements"": ""Audit Module"", ""value"": ""none"", ""team"": ""A.Platform Team"", ""macro_activity"": ""Kibana"", ""activity"": ""Dashboards"", ""profile"": ""none"", ""rate_per_day"": ""none"", ""estimation_days"": 8.0}"
 a8b49c7d-5775-431a-bb35-87d4f9b66dcd,C.Calculation Team - System Architect,"Sheet: Team Composition
 Team: C.Calculation Team
 Profile: System Architect

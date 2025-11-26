@@ -33,6 +33,7 @@ import asyncio
 import pandas as pd
 import chromadb
 import uvicorn
+from chainlit.server import login
 
 from chromadb.api.models import Collection
 from chromadb.utils import embedding_functions
@@ -229,7 +230,7 @@ estimation_lookup_tool function_tool function
 @function_tool
 def estimation_lookup_tool(query: str, max_results: int = 3) -> str:
 
-    query_embeddings = rag.openai_ef(["Alarms Module"])
+    query_embeddings = rag.openai_ef(["Audit Module,Grid Visualization and Alarms Module"])
     results = rag.collection.query(query_embeddings=query_embeddings, n_results=max_results)
 
     if not results["documents"][0]:
@@ -269,7 +270,7 @@ async def estimate_endpoint(req: EstimateRequest) -> JSONResponse:
     
           
           try: 
-
+            logging.info("on estimate_endpoint")
             async with MCPServerStreamableHttp(
                 name="Exa Search MCP",
                 params={
@@ -293,9 +294,8 @@ async def estimate_endpoint(req: EstimateRequest) -> JSONResponse:
                         Even if you have the estimation in the web search response, you should still use the estimation_lookup_tool to get the correct information of the estimation to make sure the information you provide is consistent.
                         2) Then, if necessary, use the estimation_lookup_tool to get the estimation information of the requirements.
                     * Even if you know the estimation of requirements, always use Exa Search to find the exact estimations.
-                    * Once you know the estimation, use the estimation_lookup_tool to get the estimation information of the individual team.
-                    * If the query is about requirement, in your final output give a list of element of the team involve in the estimation with their amount persons per team for a single element of the team. Also display the total estimation.
-                    * generate a table based on columns: Team_composition, persons per team, estimate and note. Fill whit the relative outcome values. Use a delimeter between any row
+                    * Once you know the estimation, use the estimation_lookup_tool to get the estimation information of the individual team the team has to be compose only use estimation_lookup_tool information.
+                    * If the query is about requirement, in your final output give generate a table based on columns: Team_composition, persons per team, estimate and note. Fill whit the relative outcome values. Use a delimiter between any row
                     * Don't use the estimation_lookup_tool more than 10 times.
                     """,
                     tools=[estimation_lookup_tool],
@@ -304,7 +304,7 @@ async def estimate_endpoint(req: EstimateRequest) -> JSONResponse:
                 
                 result = await Runner.run(
                             estimate_agent,
-                            f"Based on the requirements: Grid Visualization,Audit Module and Modulo di audit,how should a team be composed and how many day per activity :{req.requirement} ?"
+                            f"Based on the requirements: Audit Module,Grid Visualization and Alarms Module,how should a team be composed and how many day per activity :{req.requirement} ?"
                 )
             
             lines = [line.strip() for line in result.final_output.split("\n") if line.strip()]

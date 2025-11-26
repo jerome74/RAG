@@ -1,3 +1,5 @@
 .venv
 .idea/
 apps/chromadb_init/.env
+apps/chromadb_init/.chainlit
+apps/chromadb_init/.files
