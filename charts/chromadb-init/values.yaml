@@ -3,7 +3,7 @@ namespace:
 
 image:
   repository: "wlongo74/chromadb-init"
-  tag: "0.1.1"
+  tag: "0.1.2"
   pullPolicy: IfNotPresent
 
 chromadb:

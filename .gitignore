@@ -3,3 +3,4 @@
 apps/chromadb_init/.env
 apps/chromadb_init/.chainlit
 apps/chromadb_init/.files
+apps/chromadb_init/__pycache__
